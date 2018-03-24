@@ -7,5 +7,5 @@ Daily Code Code Challenges
 5. [no](Data-Structures_and_Algorithms/Code_Challenges/Reverse_an_array/)
 
 ![GitHub Logo](\Data-Structures_and_Algorithms\Assets\Binary-Search-Test.JPG)
-![file](\Assets\Binary-Search-Test.JPG)
+![file](/Assets/Binary-Search-Test.JPG)
 ![fes] (\repos\Data-Structures_and_Algorithms\Assets\Binary-Search-Test.JPG)
