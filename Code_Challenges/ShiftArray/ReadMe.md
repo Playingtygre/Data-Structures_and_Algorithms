@@ -11,3 +11,5 @@ Write a function called insertShiftArray which takes in an array and the value t
 ## Solution
 ![Reverse image](/Assets/Shift_array.JPG)
 
+## Testing
+![Reverse image](/Assets/Shift.JPG.JPG)
