@@ -12,7 +12,7 @@ Daily Code Code Challenges
 ![file](/Assets/Binary-Search-Test.JPG)
 ![fes] (\repos\Data-Structures_and_Algorithms\Assets\Binary-Search-Test.JPG)
 
-! [image] (/Assets/Binary-Search-Test.JPG)
+! [image](/Assets/Binary-Search-Test.JPG)
 
 3.[a](/Code_Challenges/Reverse_an_array)
 4.[b](/Code_Challenges/ShiftArray)
