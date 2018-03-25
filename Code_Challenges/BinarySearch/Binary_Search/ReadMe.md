@@ -1,6 +1,6 @@
-##Largest Product Arrray
+## Largest Product Arrray
 
-##Authour: Tiger Hsu
+## Authour: Tiger Hsu
 Credited with Adam Grandquist, Ramon Mendoza, Keith Eckert
 
 ## Challenge
