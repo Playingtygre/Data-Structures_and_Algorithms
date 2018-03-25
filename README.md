@@ -17,3 +17,11 @@ Daily Code Code Challenges
 
 3.[a](/Code_Challenges/Reverse_an_array)
 4.[b](/Code_Challenges/ShiftArray)
+
+![images](/Assets/CodingChallenge05.JPG)
+
+*note to self remember direction of / arrows, use path 
+/*
+4.[b](/Code_Challenges/ShiftArray)
+! [image](/Assets/Binary-Search-Test.JPG)
+*/
