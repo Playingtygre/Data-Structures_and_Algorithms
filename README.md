@@ -1,6 +1,7 @@
 # Data-Structures_and_Algorithms
 Daily Code Code Challenges 
 1. [Reverse_Array Challenge 01] (/Code_Challenges/Reverse_an_array)
+.[b](/Code_Challenges/ShiftArray)
 
 1. [Reverse_Array Challenge 01] (/Data-Structures_and_Algorithms/Code_Challenges/Reverse_an_array/)
 2. [Reverse Array](../Data-Structures_and_Algorithms/Code_Challenges/Reverse_an_array)
@@ -25,6 +26,6 @@ Daily Code Code Challenges
 
 *note to self remember direction of / arrows, use path 
 /*
-4.[b](/Code_Challenges/ShiftArray)
+4
 ! [image](/Assets/Binary-Search-Test.JPG)
 */
