@@ -1,6 +1,6 @@
 # Data-Structures_and_Algorithms
 Daily Code Code Challenges 
-1. [Reverse_Array Challenge 01] (/Code_ChallengesReverse_an_array)
+1. [Reverse_Array Challenge 01] (/Code_Challenges/Reverse_an_array)
 
 1. [Reverse_Array Challenge 01] (/Data-Structures_and_Algorithms/Code_Challenges/Reverse_an_array/)
 2. [Reverse Array](../Data-Structures_and_Algorithms/Code_Challenges/Reverse_an_array)
