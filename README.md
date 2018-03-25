@@ -13,4 +13,4 @@ Daily Code Code Challenges
 ![fes] (\repos\Data-Structures_and_Algorithms\Assets\Binary-Search-Test.JPG)
 !
 
-3.[a](/Data-Structures_and_Algorithms/Code_Challenges/Reverse_an_array)
+3.[a](/Code_Challenges/Reverse_an_array)
