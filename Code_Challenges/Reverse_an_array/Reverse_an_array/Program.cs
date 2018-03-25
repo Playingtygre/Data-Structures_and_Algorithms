@@ -4,33 +4,41 @@ namespace Reverse_an_array
 {
     class Program
     {
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
+            //testing array
+            int[] testarray = new int[] { 1, 2, 3, 4, 5 };
 
-            ///input arrray
-            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-
-            //takes the input array subtract one, keeps on doing that until its 0; 
-            //starts a new empty string iterates until new emtpy string is filled with 
-            //input array decrimating down.
-            int length = array.Length - 1;
-            string strRevser = null;
-            while (length >= 0)
+            //calls the method reverse array giving it an argument of test array
+            //iterates thru the entire array printing out each number in the array using console.writeline
+            ReverseArray(testarray);
+            for (int i = 0; i < testarray.Length; i++)
             {
-                strRevser = strRevser + array[length];
-                  length--;
+                Console.WriteLine(testarray[i]);
             }
-
-            Console.WriteLine();
-            Console.WriteLine("Reverseis " + strRevser);
             Console.ReadLine();
+        }
 
-          
 
+        //method for iterating thru entire array 
+        // setting thru the entire array subtracting the array index from one. dividing entire lenght by 2
+        //declare a new array is then accepts decrimeted old array. 
+        static Array ReverseArray(int[] input)
+        {
+            int newArray = 0;
+            for (int i = input.Length - 1; i > input.Length / 2; i--)
+            {
+                newArray = input[(input.Length - 1) - i];
+                input[(input.Length - 1) - i] = input[i];
+                input[i] = newArray;
+            }
+            return input;
+        }
 
-        }   
 
 
     }
+
 }
+  
