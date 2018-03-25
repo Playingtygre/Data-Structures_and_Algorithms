@@ -13,3 +13,8 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ## Testing
 ![Reverse image](/Assets/Shift.JPG)
+
+## Resources and Links
+401 -.NET students <br>
+Adam Granquist<br>
+Stack overflow 
