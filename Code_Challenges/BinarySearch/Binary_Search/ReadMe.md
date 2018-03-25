@@ -1,15 +1,14 @@
 ## BinarySearch
+Binary search can be used to find a value within a one-dimensional array with 
+O(log n) time complexity and O(1) for space. This can result in a much faster
+search than simply iterating over every value in the array, which would
+incur an O(n) time complexity.
 
 ## Authour: 
-<li>Tiger Hsu </li>
-Credited with :
-<li>Adam Grandquist </li>
-<li>Ramon Mendoza </li>
-<li> Keith Eckert </li>
-
-
-
-
+Tiger Hsu <br>
+Adam Grandquist <br>
+Ramon Mendoza <br>
+Keith Eckert <br>
 
 
 ## Challenge
