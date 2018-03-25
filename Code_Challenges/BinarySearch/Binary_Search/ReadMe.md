@@ -1,25 +1,13 @@
-# Largest Product Arrray
+##Largest Product Arrray
 
-**Authour**: Tiger Hsu
-Credit with Adam Garnquist
+##Authour: Tiger Hsu
+Credited with Adam Grandquist, Ramon Mendoza, Keith Eckert
 
-**Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
+## Challenge
+Write a function called BinarySearch which takes in two parmeters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array's element that is equal to the search key, or -1 if the elment does not exist.
 
-## Overview
-Write a function called LargestProduct which takes in a 2D array. Without utilizing any of the built-in methods available to your language, return the largest product of 2 adjacent values within the 2D array.
-
-## Getting Started
-Open VS code
-
-
-## Example
-
-![alt text](../data-structures-and-algorithms/assets/largest_product_array.JPG)
-![alt text](../data-structures-and-algorithms/assets/largest_product_array.JPG)
-
-
-## Architecture
-C# programming
+## Solution
+![FizzBuzz whiteboard image](../../assets/FizzBuzz.PNG)
 
 ## Change Log
 
