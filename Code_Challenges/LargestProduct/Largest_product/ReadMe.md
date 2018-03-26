@@ -12,7 +12,8 @@ Write a function called LargestProduct which takes in a 2D array. Without utiliz
 
 
 ## Testing
-![Reverse image](/Assets/Binary-Search-Test.JPG)
+![Reverse image](/Assets/LargestProductTest.JPG)
+
 
 ## Resources and Links
 401 -.NET students <br>
