@@ -1,5 +1,5 @@
 ## BinarySearch
-Insert and shift an array in middle at index
+Binary search in a sorted 1D array
 
 ## Challenge
 Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. 
