@@ -16,15 +16,11 @@ OUTPUT head -> [1] -> [3] -> [2] -> [5] ->
 
 
 
-
-
 ## Solution
-![Reverse image](/Assets/Binary_search.JPG)
+![Reverse image](/Assets/Link_list_assertion.JPG)
 
-## Testing
-![Reverse image](/Assets/Binary-Search-Test.JPG)
 
 ## Resources and Links
 401 -.NET students <br>
-Adam Granquist<br>
+David Snowberger<br>
 Stack overflow 
