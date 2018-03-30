@@ -20,7 +20,7 @@ This is a implementaion of a link node list.
 
 ## Example
 
-![alt text](http://url/to/img.png)
+![alt text](/Assets/singlyTest.JPG)
 
 <!-- Show them what looks like and how how to use the application.  -->
 
