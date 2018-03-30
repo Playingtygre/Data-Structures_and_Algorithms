@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkList", "LinkList\LinkList.csproj", "{215C0FCE-D471-4E7D-9C98-AF02EE626D58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkList", "LinkList\LinkList.csproj", "{215C0FCE-D471-4E7D-9C98-AF02EE626D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{DDBAFCF6-20EF-46AF-93CD-E7E2B25A793E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{215C0FCE-D471-4E7D-9C98-AF02EE626D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{215C0FCE-D471-4E7D-9C98-AF02EE626D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{215C0FCE-D471-4E7D-9C98-AF02EE626D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDBAFCF6-20EF-46AF-93CD-E7E2B25A793E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBAFCF6-20EF-46AF-93CD-E7E2B25A793E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBAFCF6-20EF-46AF-93CD-E7E2B25A793E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBAFCF6-20EF-46AF-93CD-E7E2B25A793E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
