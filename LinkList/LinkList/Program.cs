@@ -1,39 +1,32 @@
 ﻿using System;
+using LinkList;
+
 
 namespace LinkList
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
 
-
-            // watch videos from 3/23/18 this will give you a better understanding 
-
-
-            //Calls pulbic Node class, which creates a new node get method, set method.
-            Node node0 = new Node();
+            // Declare the nodes
             Node node1 = new Node();
             Node node2 = new Node();
             Node node3 = new Node();
             Node node4 = new Node();
-            Node node5 = new Node();
 
-            //sets the next node to the mentioned above value.
-            node0.Next = node1;
+            // Link the nodes
             node1.Next = node2;
             node2.Next = node3;
             node3.Next = node4;
-            node4.Next = node5;
-            node5.Next = null;
+            node4.Next = null;
 
-            //setting node value
+            // Populate the nodes
             node1.value = 2;
             node2.value = 3;
             node3.value = 4;
             node4.value = 5;
-            node5.value = 6;
 
             SinglyLinked sll = new SinglyLinked(node1); // If this is set later than node1, list starts there
 
@@ -48,9 +41,8 @@ namespace LinkList
             Console.WriteLine("Here's the list again");
             sll.PrintAllNodes(); // prints the list again to show it worked.
             Console.ReadLine();
-
-
-
         }
+
+
     }
 }
