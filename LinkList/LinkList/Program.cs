@@ -8,7 +8,7 @@ namespace LinkList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("This is a Linked list");
 
             // Declare the nodes
             Node node1 = new Node();
@@ -28,18 +28,22 @@ namespace LinkList
             node3.value = 4;
             node4.value = 5;
 
-            SinglyLinked sll = new SinglyLinked(node1); // If this is set later than node1, list starts there
+            //This is the start of the singly node list.
+            SinglyLinked sll = new SinglyLinked(node1);
 
-            sll.PrintAllNodes(); // traverses the node, prints them all out
+            // SinglyLinked List Prints all nodes 
+            sll.PrintAllNodes();
 
-            sll.Find(3); // Traverses the node, prints out the parameter if found
+            // Traverses the node, prints out the parameter if found
+            sll.Find(4); 
 
             sll.AddAtEnd(11); // Adds new node and value to the end of the list.
 
             int dummy = sll.Add(1); // Adds new node and value to the start of the list.
 
-            Console.WriteLine("Here's the list again");
-            sll.PrintAllNodes(); // prints the list again to show it worked.
+            Console.WriteLine("Show Current List");
+            // prints the list again to show it worked.
+            sll.PrintAllNodes(); 
             Console.ReadLine();
         }
 

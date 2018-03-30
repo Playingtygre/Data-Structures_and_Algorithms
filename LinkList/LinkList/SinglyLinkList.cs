@@ -9,22 +9,12 @@ namespace LinkList
     {
         public Node Head { get; set; }
 
-        /// <summary>
-        /// Sets memory location value for Head
-        /// </summary>
-        /// <param name="node">The value as set by the caller.  Can't be changed in this object.</param>
+        
         public SinglyLinked(Node node)
         {
             Head = node;
         }
 
-        //O(1) - .Add() - adds a node to the front of the linked list
-        //O(n) - .Find() - Finds a specific value in the linked list   DONE
-
-        /// <summary>
-        /// Adds a new node to the end of a linked list and populates it with a value.
-        /// </summary>
-        /// <param name="value">The value to be populated into the node</param>
         public int AddAtEnd(int value)
         {
             Node cur = Head; // start of node list
@@ -42,11 +32,7 @@ namespace LinkList
             return value; // Only necessary for testing.  This particular data doesn't do anything.  It just writes to a list.
 
         }
-
-        /// <summary>
-        /// Adds a new node to the front of the list and populates it with a value
-        /// </summary>
-        /// <param name="value">The value to be populated into to the new node</param>
+        
         public int Add(int value)
         {
             Node node0 = new Node(); // To be the first node on the list
@@ -58,10 +44,7 @@ namespace LinkList
             return value; // Only necessary for testing.  This particular data doesn't do anything.  It just writes to a list.
         }
 
-        /// <summary>
-        /// Traverses the list, prints all the items to the console
-        /// from https://stackoverflow.com/questions/3823848/creating-a-very-simple-linked-list
-        /// </summary>
+      
         public void PrintAllNodes()
         {
             Node cur = Head; // start of node list
@@ -74,10 +57,7 @@ namespace LinkList
             Console.WriteLine($"cur.Value: {cur.value}"); // Another call for cur.Value because the loop kicks out early
         }
 
-        /// <summary>
-        /// finds the node query, console outputs it if it there, does nothing if it is not
-        /// Adapted from https://stackoverflow.com/questions/3823848/creating-a-very-simple-linked-list
-        /// </summary>
+
         public void Find(int query)
         {
             Node cur = Head; // start of node list
@@ -86,9 +66,9 @@ namespace LinkList
             {
                 if (cur.value == query)
                     Console.WriteLine($"I found {query}!");
-                cur = cur.Next; // get the next node
+                cur = cur.Next; 
             }
-            if (cur.value == query) // Another call for cur.Value because the loop kicks out early
+            if (cur.value == query) 
                 Console.WriteLine($"I found {query}!");
         }
 
