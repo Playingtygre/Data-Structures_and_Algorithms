@@ -9,30 +9,33 @@ namespace LinkList
     {
         public Node Head { get; set; }
 
-        
+        //sets current Head to node, this is kinda of the runner
         public SinglyLinked(Node node)
         {
             Head = node;
         }
 
+        //method for adding traversing the list.
         public int AddAtEnd(int value)
         {
-            Node cur = Head; // start of node list
-            Node nodeLast = new Node(); // To be a new last node on the list
+            Node cur = Head;
+            Node nodeLast = new Node();
 
-            // traverse the node
+           
             while (cur.Next != null)
             {
                 cur = cur.Next; // get the next node
             }
-            // Now cur is the last node on the list
-            nodeLast.Next = null; //  Point last node to null.  Necessary for making system know that this node exists.  Otherwise you'll get an "Object reference not set to an instance of an object" error
-            cur.Next = nodeLast; // Point former last node to new last node
-            nodeLast.value = value; // Populate last node.
-            return value; // Only necessary for testing.  This particular data doesn't do anything.  It just writes to a list.
+            
+            nodeLast.Next = null;
+            cur.Next = nodeLast; 
+            nodeLast.value = value;
+            return value; 
 
+            // Bottom for the method for traversing the end of the list 
         }
         
+        //Method for adding another node
         public int Add(int value)
         {
             Node node0 = new Node(); // To be the first node on the list
@@ -51,10 +54,10 @@ namespace LinkList
             // traverse the node
             while (cur.Next != null)
             {
-                Console.WriteLine($"cur.Value: {cur.value}");
-                cur = cur.Next; // get the next node
+                Console.WriteLine($"current Node Value: {cur.value}");
+                cur = cur.Next; //points to the next node 
             }
-            Console.WriteLine($"cur.Value: {cur.value}"); // Another call for cur.Value because the loop kicks out early
+            Console.WriteLine($"Current Node Value: {cur.value}"); // Another call for cur.Value because the loop kicks out early
         }
 
 
@@ -70,7 +73,10 @@ namespace LinkList
             }
             if (cur.value == query) 
                 Console.WriteLine($"I found {query}!");
+
         }
+
+
 
 
     }
