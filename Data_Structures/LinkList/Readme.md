@@ -1,7 +1,47 @@
-# Data Structure implementaions
+### Singly Linked List
 
-For each of the implementations within this folder, you will be creating a new folder in your Data Structures and Algorithms Repo named `Data Structures`. 
+## Author:
+Tiger Hsu
+with Collaboration From Aurther Allen
 
-Following the same pattern as the `Challenges` folder, your default readme for the `Data Structures` folder should hold a table of contents of all the different implemnetations you have. 
-Each individual folder inside this directory will be the individual implementations of different data structures.
-the readme document for each of the implementations is a comprehensive readme of what this data structure is and how to use it. Create your own technical documenation!
+## Version:
+1.0.0 
+
+## Overview
+This is a implementaion of a link node list.
+
+
+## Getting Started
+- Fork this repo / or clone this repo
+- Download Microsoft Visual Studio Community Edition 2017
+- Open Visual Studio 2017
+- Open this file name 
+- Select run program.cs
+
+## Example
+
+![alt text](http://url/to/img.png)
+
+<!-- Show them what looks like and how how to use the application.  -->
+
+## Architecture
+This  Program uses C# and the .NET Core 2.0 platform
+
+## Credits
+Aurther Allen
+Kevin Farrow
+Brent William
+Philip Werner
+Josh Taylor
+Amanda Iverson
+
+## Resources
+StackoverFlow
+Microsoft Docs
+
+## License
+MIT License
+
+## Change Log
+
+01-01-2001 4:59pm
