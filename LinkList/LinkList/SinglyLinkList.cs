@@ -69,7 +69,7 @@ namespace LinkList
             while (cur.Next != null)
             {
                 if (cur.value == query)
-                    Console.WriteLine($"I found {query}!");
+                    Console.WriteLine($"FINDING --> {query}!");
                 cur = cur.Next; 
             }
             if (cur.value == query) 
