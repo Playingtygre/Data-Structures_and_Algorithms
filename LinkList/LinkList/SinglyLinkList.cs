@@ -61,6 +61,7 @@ namespace LinkList
         }
 
 
+        //Method for finding each node head and the query
         public void Find(int query)
         {
             Node cur = Head; // start of node list
