@@ -37,9 +37,11 @@ namespace LinkList
             // Traverses the node, prints out the parameter if found
             sll.Find(4); 
 
-            sll.AddAtEnd(11); // Adds new node and value to the end of the list.
+            //adds this reoccuring node at the end
+            sll.AddAtEnd(11);
 
-            int dummy = sll.Add(1); // Adds new node and value to the start of the list.
+            // Adds new node and value to the start of the list.
+            int dummy = sll.Add(1);
 
             Console.WriteLine("Show Current List");
             // prints the list again to show it worked.
