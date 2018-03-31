@@ -7,7 +7,7 @@
 4. [Largest Product](/Code_Challenges/LargestProduct)
 
 ## Daily Data-Structures
-1. [Linked List]
+1. [Linked List](Data_Structures/LinkList/)
 2. [Linked List Insertion]
 3. [k-th Value]
 4. [Merge Two Link Lists]
