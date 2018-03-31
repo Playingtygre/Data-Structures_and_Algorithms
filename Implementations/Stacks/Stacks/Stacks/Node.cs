@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Stacks
 {
-    class Node
+    public class Node
     {
         // adding the abstraction Node class, Value and Next
         public int Value { get; set; }

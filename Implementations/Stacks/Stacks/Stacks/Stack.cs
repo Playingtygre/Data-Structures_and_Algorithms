@@ -5,7 +5,7 @@ using System.Text;
 namespace Stacks
 {
 
-    class Stack
+    public class Stack
     {
         public Node Head { get; set; }
         public Stack(Node node)
