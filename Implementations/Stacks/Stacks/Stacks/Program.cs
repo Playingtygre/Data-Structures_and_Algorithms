@@ -13,8 +13,10 @@ namespace Stacks
             Node node1 = new Node() { Value = 5 };
 
             Stack stack = new Stack(node0);
-
+            
             stack.Push(node1);
+
+            Console.WriteLine(stack.Peek().Value);
 
         }
     }
