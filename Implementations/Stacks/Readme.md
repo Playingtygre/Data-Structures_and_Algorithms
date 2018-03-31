@@ -19,7 +19,7 @@ nd the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's y
 
 ## Example
 
-![alt text](http://url/to/img.png)
+![alt text](/AssetsStack/STACKS_EXAMPLE.png)
 
 <!-- Show them what looks like and how how to use the application.  -->
 
