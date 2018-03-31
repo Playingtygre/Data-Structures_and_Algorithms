@@ -19,6 +19,13 @@ namespace Stacks
             node.Next = Head;
             Head = node;
         }
+        //
+        public void Pop(Node node)
+        {
+
+            node.Next = Head;
+            Head = node;
+        }
 
         public Node Peek() => Head;
     }
