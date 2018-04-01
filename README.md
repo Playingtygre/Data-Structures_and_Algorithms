@@ -1,4 +1,5 @@
 ## Data-Structures_and_Algorithms
+This is a folder for learning about arrays, linked lists, binary trees, hash tables, graphs, stacks, queues, heaps, and other fundamental data structures. A majority of this folder is codeded out in C#
 
 ## Daily Code Code Challenges 
 1. [Reverse_Array Challenge 01](/Code_Challenges/Reverse_an_array)
