@@ -1,4 +1,5 @@
 ## Statcks and Qs
+Coding out a model for implementing a Q model and stack. 
 
 ## Author:
 Tiger Hsu
@@ -7,8 +8,8 @@ Tiger Hsu
 1.0.0 
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyo
-nd the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's your problem domain?) -->
+This is an impplemtation of a stack nodes and Q nodes. Last week we had learned about Linked Lists,
+stacks and Ques is pretty much an representaion of this but in a stacked manner.
 
 ## Getting Started
 - Fork this repo / or clone this repo
@@ -43,4 +44,4 @@ MIT License
 
 ## Change Log
 
-01-01-2001 4:59pm - Added functionality to add and delete some things. -->
+04-02-2018 10:17am
