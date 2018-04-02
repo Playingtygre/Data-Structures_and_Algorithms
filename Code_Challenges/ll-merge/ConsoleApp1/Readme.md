@@ -14,3 +14,9 @@ challenges.
 
 ## Solution
 <!-- Embedded whiteboard image -->
+
+## Resources and Links
+401 -.NET students <br>
+David Snowberger<br>
+Brent Williams<br>
+Stack overflow 
