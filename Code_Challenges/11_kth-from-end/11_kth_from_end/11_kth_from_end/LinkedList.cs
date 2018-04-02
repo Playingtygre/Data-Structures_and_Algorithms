@@ -48,12 +48,18 @@ namespace kth_from_end
             return -1;
         }
 
-        //
+        //Method to count the entire length of the Node using a
+        //for loop
         public int Length()
         {
             Node current = Head;
             int count = 1;
-            while (current)
+            while (current.Next != null)
+            {
+                count++;
+                current = current.Next;
+            }
+            return count;
         }
 
 
