@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LinkedListAssertions
+namespace LinkedListInsertions
 {
-    public class Node
+    class Node 
     {
-        public int Value { get; set; }
-        public Node Next { get; set; }
+        public Node Next;
+        public object Value;
     }
 }
