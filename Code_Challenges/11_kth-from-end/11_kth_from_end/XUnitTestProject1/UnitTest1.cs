@@ -18,7 +18,6 @@ namespace XUnitTestProject1
         public void CanFindThirdFromEnd()
         {
             LinkedList l = new LinkedList(new int[] { 1, 5, 3, 6, 2, 9, 11 });
-            LinkedList ex = new LinkedList(new int[] { 1, 5, 3 });
             Node expect = ex.Head;
             Assert.Equal(expect, l.Kth(2));
         }
