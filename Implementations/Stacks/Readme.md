@@ -20,7 +20,7 @@ stacks and Ques is pretty much an representaion of this but in a stacked manner.
 
 ## Example
 
-![alt text](http://url/to/img.png)
+![alt text](/AssetsStack/STACKS_EXAMPLE.png)
 
 <!-- Show them what looks like and how how to use the application.  -->
 
@@ -45,3 +45,5 @@ MIT License
 ## Change Log
 
 04-02-2018 10:17am
+
+
