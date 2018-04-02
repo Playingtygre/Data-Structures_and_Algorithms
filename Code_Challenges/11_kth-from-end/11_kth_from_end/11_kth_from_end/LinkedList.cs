@@ -61,7 +61,20 @@ namespace kth_from_end
             }
             return count;
         }
-
+        //method for finding kth postion
+        public Node Kth(int k)
+        {
+            //setting up the lenght subtract to prevent from going to null
+            int len = Length() - 1;
+            // seting the current node at the start
+            Node current = Head;
+            //itterate thru the nodes until current matches with next node.
+            for (int i = 0; i < len - k; i++)
+            {
+                current = current.Next;
+            }
+            return current;
+        }
 
 
     }
