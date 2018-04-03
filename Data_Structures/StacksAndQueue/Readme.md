@@ -1,5 +1,4 @@
-## Statcks and Qs
-Coding out a model for implementing a Q model and stack. 
+## Statcks And Queue
 
 ## Author:
 Tiger Hsu
@@ -17,12 +16,6 @@ stacks and Ques is pretty much an representaion of this but in a stacked manner.
 - Open Visual Studio 2017
 - Open this file name 
 - Select run program.cs
-
-## Example
-
-![alt text](/AssetsStack/STACKS_EXAMPLE.png)
-
-<!-- Show them what looks like and how how to use the application.  -->
 
 ## Architecture
 This  Program uses C# and the .NET Core 2.0 platform
