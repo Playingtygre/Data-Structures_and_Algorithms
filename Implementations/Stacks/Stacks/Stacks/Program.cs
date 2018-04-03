@@ -17,7 +17,7 @@ namespace Stacks
             stack.Push(node1);
 
             Console.WriteLine(stack.Peek().Value);
-
+            Console.ReadKey();
         }
     }
 }
