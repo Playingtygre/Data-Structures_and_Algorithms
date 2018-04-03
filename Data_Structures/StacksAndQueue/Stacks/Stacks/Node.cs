@@ -9,5 +9,6 @@ namespace Stacks
         // adding the abstraction Node class, Value and Next
         public int Value { get; set; }
         public Node Next { get; set; }
+        public Node Tail { get; set; }
     }
 }
