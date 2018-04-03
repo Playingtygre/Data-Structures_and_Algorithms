@@ -14,15 +14,15 @@ namespace Stacks
         //setting up queue node , Check the drawing 
         public Ques(Node node)
         {
-            Tail.Next = node;
-            Tail = Tail.Next;
+            Head = node;
+            Tail = Head;
         }
 
         //Method that is adding node by having tail shift
         public void Enqueue(Node node)
         {
-            Tail.Next = node;
-            Tail = Tail.Next;
+            Tail.Next = Head;
+            Head = node;
         }
 
         //Method for removing a node across
