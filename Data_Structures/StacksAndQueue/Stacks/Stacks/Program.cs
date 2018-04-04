@@ -8,14 +8,15 @@ namespace Stacks
         static void Main(string[] args)
         {
             Console.WriteLine("Stacked Node list");
-            Stack();
-            Queue();
+           //Stack();
+           Queue();
 
           
         }
 
 
         // Setting up values for node list, Rememer the get set : methods
+        /*
         public static void Stack()
         {
             Node node0 = new Node() { Value = 4 };
@@ -30,7 +31,7 @@ namespace Stacks
             //Peeking at the top of the stack because there is only one that we set.
             Console.WriteLine(examplestack.Peek());
             Console.ReadLine();
-
+        
             //Creating a new Constructor, trying the push method;
             Stack examplePush = new Stack (node0);
 
@@ -50,28 +51,39 @@ namespace Stacks
             Console.ReadLine();
             Console.WriteLine(" End of example stack : [4] [5]");
             Console.ReadLine();
-
-        }
-
-
+            
+        }*/
 
 
+
+        
         public static void Queue()
         {
+            //setting up a Queue values using a constructor function
             Node node0 = new Node() { Value = 1 };
             Node node1 = new Node() { Value = 2 };
             Node node2 = new Node() { Value = 3 };
             Node node3 = new Node()  {Value = 4 };
 
+            // only 1 node in the queue
             Ques exampleQueue = new Ques(node0);
             Console.WriteLine("lets do a Queue  Example [1] ");
-            Console.WriteLine("Lets peform a Enqueue ; [1]   <- [2] <- [3] <-[4] ");
+            Console.WriteLine("Lets peform a Enqueue ; [1]  <-[4] ");
+
+            //Enqueue in the chain
+            Console.WriteLine(exampleQueue.Peek());
 
             exampleQueue.Enqueue(node1);
-            Console.WriteLine(exampleQueue.Peek());
-            // exampleQueue.Enqueue(node2);
-            //exampleQueue.Enqueue(node3);
+            exampleQueue.Enqueue(node2);
+            exampleQueue.Enqueue(node3);
 
+            Console.WriteLine("AWSOME WE STUCK [4] NEXT TO [1], REMEMBER PEEK METHOD CAN ONLY SEE 1 NODE AT A TIME");
+            Console.WriteLine(exampleQueue.Peek());
+            Console.ReadLine();
+
+            Console.WriteLine("LETS REMOVE THE [4] WITH A DEQUEUE");
+            exampleQueue.Dequeue();
+            Console.WriteLine("NEATO WE ONLY HAVE [1] NOW");
             Console.WriteLine(exampleQueue.Peek());
             Console.ReadLine();
 
