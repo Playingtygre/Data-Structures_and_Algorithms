@@ -8,7 +8,7 @@ namespace Stacks
     {
         //Creating a Node with an Object Constructor
         public Node Head { get; set; }
-        public Node Tail { get; set; } // get rid of this..?
+        public Node Tail { get; set; } // get rid of this..??
 
 
         //setting up queue node , Check the drawing 
