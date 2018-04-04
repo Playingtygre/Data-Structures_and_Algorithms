@@ -8,21 +8,29 @@ namespace Stacks
     {
         //Creating a Node with an Object Constructor
         public Node Head { get; set; }
-        public Node Tail { get; set; }
+        public Node Tail { get; set; } // get rid of this..?
 
 
         //setting up queue node , Check the drawing 
         public Ques(Node node)
         {
-            Tail.Next = node;
-            Tail = Tail.Next;
+            Head = node;
+   
         }
 
-        //Method that is adding node by having tail shift
+        //Method that is adding node at the end
         public void Enqueue(Node node)
         {
-            Tail.Next = node;
-            Tail = Tail.Next;
+
+            //node.Next = Head;
+            //Head = node;
+
+            node.Next = Tail;
+            Tail = node;
+
+            /*Head = node.next;
+            Tail = node;*/
+
         }
 
         //Method for removing a node across
