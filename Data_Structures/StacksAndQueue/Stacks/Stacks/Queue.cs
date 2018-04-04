@@ -10,6 +10,7 @@ namespace Stacks
         public Node Head { get; set; }
         public Node Tail { get; set; } // get rid of this..?
 
+
         //setting up queue node , Check the drawing 
         public Ques(Node node)
         {
@@ -43,7 +44,7 @@ namespace Stacks
 
 
             {   //setting a temporary node
-                int value = Head;
+                int value = Head.Value;
                 // node head is the next value in line
                 Node temp = Head.Next;
                 //if the node head finds last one then  it returns the value.

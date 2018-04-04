@@ -54,9 +54,6 @@ namespace Stacks
             
         }*/
 
-
-
-        
         public static void Queue()
         {
             //setting up a Queue values using a constructor function
