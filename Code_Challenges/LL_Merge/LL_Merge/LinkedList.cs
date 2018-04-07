@@ -57,7 +57,7 @@ using System.Text;
             newNode.Value = newValue;
         }
         
-           
+          //METHOD TO INSERT NODE
         public void InsertAfter(int targetValue, int newValue)
         {
             Node newNode = new Node();
@@ -102,7 +102,7 @@ using System.Text;
         {
             // setting the head to a variable of runner
             Node runnerOne = head;
-            //setting the second head to
+            //setting the second head to 
             Node runnerTwo = inputList.head;
             int limit = inputList.ListLength();
             if (ListLength() < inputList.ListLength())
@@ -122,6 +122,8 @@ using System.Text;
             return head;
         }
 
+        /*
+
         public bool hasLoop()
         {
             int lemgth = ListLength();
@@ -133,7 +135,7 @@ using System.Text;
                 if (runner.Next == null) hasLoop = true;
             }
             return hasLoop;
-        }
+        }*/
 
         /* Portions of this code were copied from Kevin Farrow */
     }
