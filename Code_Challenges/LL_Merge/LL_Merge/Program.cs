@@ -10,7 +10,6 @@ namespace SinglyLinkedList
 
         public static void Main(string[] args)
         {
-
             //Creating Object Constructor called testone
 
             SinglyLinkedList testListOne = new SinglyLinkedList();
