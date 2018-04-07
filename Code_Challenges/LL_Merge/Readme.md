@@ -7,7 +7,7 @@ Write a function that is called merge Lists, which takes in two linked lists as
 arguments, zip the two nodes together in one larger Singly linked list. 
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![alt text](http://url/to/img.png)
 
 ## Disclaimer
 Parts of this code base was copied from Kevin Farrow.
