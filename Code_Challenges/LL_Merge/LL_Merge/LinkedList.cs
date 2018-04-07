@@ -3,129 +3,139 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SinglyLinkedList
+ namespace SinglyLinkedList
 {
-  
-        public class LinkedList
+
+    public class SinglyLinkedList
+    {
+        // The list is initially empty.
+        private Node head = null;
+
+        // Add a node at the beginning of the list with the contents of value as its value.
+        public void Add(int value)
         {
-            public Node Head { get; protected set; }
-
-            public int Count;
-
-            /// <summary>
-            /// creates an instance of a Linked List
-            /// </summary>
-            public LinkedList(Node node)
-            {
-                Head = new Node
-                {
-                    Next = node
-                };
-                Count++;
-            }
-
-            /// <summary>
-            /// add a new Node to the front/"Head" of the Linked List
-            /// </summary>
-            /// <param name="data">int type for the Value of the Node</param>
-            public void Add(Node node)
-            {
-                node.Next = Head.Next;
-                Head.Next = node;
-                Count++;
-            }
-
-            /// <summary>
-            /// checks the Linked List to see if the input node value
-            /// exists in the Linked List
-            /// </summary>
-            /// <param name="data">int type of search value</param>
-            /// <returns>the Node if it exists</returns>
-            public Node Find(int data)
-            {
-                Node currentCheck = Head.Next;
-                Node result = null;
-                for (int i = 0; i < Count; i++)
-                {
-                    if (currentCheck.value == data)
-                    {
-                        result = currentCheck;
-                    }
-                    else
-                    {
-                        currentCheck = currentCheck.Next;
-                    }
-                }
-                return result;
-            }
-
-            /// <summary>
-            /// gets the length of the Linked List
-            /// </summary>
-            /// <returns>int type of the current length</returns>
-            public int Length()
-            {
-                return Count;
-            }
-
-            public void Append(Node node)
-            {
-                Node curr = Head.Next;
-                while (curr.Next != null)
-                {
-                    if (curr.Next.Next == null)
-                    {
-                        curr.Next.Next = node;
-                        node.Next = null;
-                        break;
-                    }
-                    else
-                    {
-                        curr = curr.Next;
-                    }
-                }
-            }
-
-            public void InsertBefore(int insert, int before)
-            {
-                Node newNode = new Node();
-                newNode.value = insert;
-                Node curr = Head.Next;
-                while (curr.Next != null)
-                {
-                    if (curr.Next.value == before)
-                    {
-                        newNode.Next = curr.Next;
-                        curr.Next = newNode;
-                        break;
-                    }
-                    else
-                    {
-                        curr = curr.Next;
-                    }
-                }
-            }
-
-            public void InsertAfter(int insert, int after)
-            {
-                Node newNode = new Node();
-                newNode.value = insert;
-                Node curr = Head.Next;
-                while (curr.Next != null)
-                {
-                    if (curr.Next.value == after)
-                    {
-                        newNode.Next = curr.Next;
-                        curr.Next = newNode;
-                        break;
-                    }
-                    else
-                    {
-                        curr = curr.Next;
-                    }
-                }
-            }
-
+            Node newNode = new Node(); //Make the new Node
+            newNode.Next = head; // Set the nodes referance for the first in the list
+            newNode.Value = value; // Set the new nodes data
+            head = newNode; //set the new node as the head or fist in the list
         }
-    
+
+        public Node Find(int target)
+        {
+            Node step = head;
+            while (step.Next != null)
+            {
+                if (step.Value == target)
+                {
+                    return step;
+                }
+                step = step.Next;
+            }
+            return head; //If not in the list set to the head node
+        }
+
+        public void AddToEnd(int newValue)
+        {
+            Node runner = head;
+            Node newNode = new Node();
+            while (runner.Next != null)
+            {
+                runner = runner.Next;
+            }
+            runner.Next = newNode;
+            newNode.Next = null;
+            newNode.Value = newValue;
+        }
+        /*
+        public void InsertBefore(int targetValue, int newValue)
+        {
+            Node runner = head;
+            while (runner.Next != null)
+            {
+                if (runner.Next.Value == targetValue)
+                {
+                    Node preNode = Find(runner.Value);
+                    Node newNode = new Node();
+                    newNode.Next = preNode.Next;
+                    preNode.Next = newNode;
+                    newNode.Value = newValue;
+                    break;
+                }
+                runner = runner.Next;
+            }
+        }*/
+
+        public void InsertAfter(int targetValue, int newValue)
+        {
+            Node newNode = new Node();
+            newNode.Value = newValue;
+            Node targetNode = Find(targetValue);
+            newNode.Next = targetNode.Next;
+            targetNode.Next = newNode;
+        }
+
+        public string PrintToString()
+        {
+            StringBuilder sb = new StringBuilder("");
+
+            Node step = head;
+            while (step.Next != null)
+            {
+                sb.Append($"{step.Value} ");
+                step = step.Next;
+            }
+            sb.Append($"{step.Value} ");
+            return sb.ToString();
+        }
+        // Helper length method to make kthFromEnd shorter
+        public int ListLength()
+        {
+            Node runner = new Node();
+            runner.Next = head;
+            int length = 0;
+            while (runner.Next != null)
+            {
+                length++;
+                runner = runner.Next;
+            }
+            return length;
+        }
+
+
+        public Node MergeLists(SinglyLinkedList inputList)
+        {
+            Node runnerOne = head;
+            Node runnerTwo = inputList.head;
+            int limit = inputList.ListLength();
+            if (ListLength() < inputList.ListLength())
+            {
+                limit = ListLength();
+            }
+            for (int i = 0; i < limit; i++)
+            {
+                InsertAfter(runnerOne.Value, runnerTwo.Value);
+                if (i == limit)
+                {
+                    break;
+                }
+                runnerOne = runnerOne.Next.Next;
+                runnerTwo = runnerTwo.Next;
+            }
+            return head;
+        }
+
+        public bool hasLoop()
+        {
+            int lemgth = ListLength();
+            bool hasLoop = false;
+            Node runner = new Node();
+            runner.Next = head;
+            for (int i = 0; i < lemgth; i++)
+            {
+                if (runner.Next == null) hasLoop = true;
+            }
+            return hasLoop;
+        }
+
+    }
 }
