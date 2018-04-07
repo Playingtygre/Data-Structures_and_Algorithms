@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_kth_from_end", "11_kth_from_end\11_kth_from_end.csproj", "{3B9CF6F6-7D71-42EE-9724-AF3D7DFA6DFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linked_List", "11_kth_from_end\Linked_List.csproj", "{3B9CF6F6-7D71-42EE-9724-AF3D7DFA6DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{765D5887-7B3E-4836-9576-62A66E6CCF57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{765D5887-7B3E-4836-9576-62A66E6CCF57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

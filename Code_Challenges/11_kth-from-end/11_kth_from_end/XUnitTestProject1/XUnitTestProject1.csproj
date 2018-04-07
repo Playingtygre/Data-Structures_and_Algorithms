@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\11_kth_from_end\11_kth_from_end.csproj" />
+    <ProjectReference Include="..\11_kth_from_end\Linked_List.csproj" />
   </ItemGroup>
 
 </Project>
