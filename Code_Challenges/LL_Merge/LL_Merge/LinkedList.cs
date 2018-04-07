@@ -5,23 +5,32 @@ using System.Text;
 
  namespace SinglyLinkedList
 {
+    /* Portions of this code were copied from Kevin Farrow */
 
+    //THIS IS THE SINGLEY LINKED LIST
     public class SinglyLinkedList
     {
-        // The list is initially empty.
+        // SETTING THE NODE HEAD TO EMPTY
         private Node head = null;
 
-        // Add a node at the beginning of the list with the contents of value as its value.
+        // CREATING A NEW NODE BY SETTING THE CURRENT
         public void Add(int value)
         {
-            Node newNode = new Node(); //Make the new Node
-            newNode.Next = head; // Set the nodes referance for the first in the list
-            newNode.Value = value; // Set the new nodes data
-            head = newNode; //set the new node as the head or fist in the list
+            // IN THE OBJECT CONSTRUCTOR CREATES NEW NODE FROM NODE CLASS
+            Node newNode = new Node();
+            // SETTING THE NEW NODE TO THE HEAD 
+            newNode.Next = head;
+            // SETTING THE NEW NODE TO THE VALUE OF
+            newNode.Value = value;
+            // SWITCHING THE HEAD TO THE NEW NODE
+            head = newNode;
         }
 
+       
+        // THIS METHOD FINDS THE TARGET VALUE OF A NODE
         public Node Find(int target)
         {
+            //IF THE NODE IS NOT NULL PROCCED TO NEXT
             Node step = head;
             while (step.Next != null)
             {
@@ -31,9 +40,10 @@ using System.Text;
                 }
                 step = step.Next;
             }
-            return head; //If not in the list set to the head node
+            return head;
         }
-
+       
+        // METHOD TO ADD INTERGERS TO VALUE OF NODE.NEXT 
         public void AddToEnd(int newValue)
         {
             Node runner = head;
@@ -46,25 +56,8 @@ using System.Text;
             newNode.Next = null;
             newNode.Value = newValue;
         }
-        /*
-        public void InsertBefore(int targetValue, int newValue)
-        {
-            Node runner = head;
-            while (runner.Next != null)
-            {
-                if (runner.Next.Value == targetValue)
-                {
-                    Node preNode = Find(runner.Value);
-                    Node newNode = new Node();
-                    newNode.Next = preNode.Next;
-                    preNode.Next = newNode;
-                    newNode.Value = newValue;
-                    break;
-                }
-                runner = runner.Next;
-            }
-        }*/
-
+        
+           
         public void InsertAfter(int targetValue, int newValue)
         {
             Node newNode = new Node();
@@ -74,6 +67,7 @@ using System.Text;
             targetNode.Next = newNode;
         }
 
+        // METHOD TO PRINT ENTIRE NOT AS LONG AS THE NODE.NEXT IS NOT NULL
         public string PrintToString()
         {
             StringBuilder sb = new StringBuilder("");
@@ -87,7 +81,8 @@ using System.Text;
             sb.Append($"{step.Value} ");
             return sb.ToString();
         }
-        // Helper length method to make kthFromEnd shorter
+        
+
         public int ListLength()
         {
             Node runner = new Node();
@@ -102,9 +97,12 @@ using System.Text;
         }
 
 
+        //Method Called on Merging a linkined list
         public Node MergeLists(SinglyLinkedList inputList)
         {
+            // setting the head to a variable of runner
             Node runnerOne = head;
+            //setting the second head to
             Node runnerTwo = inputList.head;
             int limit = inputList.ListLength();
             if (ListLength() < inputList.ListLength())
@@ -137,5 +135,7 @@ using System.Text;
             return hasLoop;
         }
 
+        /* Portions of this code were copied from Kevin Farrow */
     }
+
 }
