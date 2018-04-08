@@ -6,7 +6,7 @@ namespace Stacks
 {
     public class Queue
     {
-        /* Parts of this code were copied from Kevin Farrow*/
+        //* Parts of this code base is attributed to Kevin Farrow */
         public Node Front { get; set; }
 
        
