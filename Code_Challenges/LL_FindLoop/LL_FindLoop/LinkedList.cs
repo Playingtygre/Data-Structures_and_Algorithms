@@ -7,7 +7,7 @@ namespace LL_FindLoop
   class LinkedList
     {
 
-        /* Portions of this code were copied from Kevin Farrow */
+        /* Parts of this code base is attributed to Kevin Farrow */
 
         //THIS IS THE SINGLEY LINKED LIST
         public class SinglyLinkedList
@@ -123,7 +123,7 @@ namespace LL_FindLoop
                 return length;
             }
 
-            /* Portions of this code were copied from Kevin Farrow */
+            /* Parts of this code base is attributed to Kevin Farrow */
         }
 
     }
