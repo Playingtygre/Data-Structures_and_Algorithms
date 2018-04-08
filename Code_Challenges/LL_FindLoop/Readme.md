@@ -9,5 +9,5 @@ whether or not a circular reference has a loop inside of a linked list or not.
 ## Solution
 ![alt text](/Assets/InsertAssertions.JPG)
 
-## Disclaimer
-Parts of this code base was copied from Kevin Farrow.
+## Attribution
+Parts of this code base is attributed to Kevin Farrow.
