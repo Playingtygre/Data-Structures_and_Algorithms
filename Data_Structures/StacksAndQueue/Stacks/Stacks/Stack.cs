@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Stacks
 {
+    /* A PORTION OF THE CODE WAS GIVEN TO US BY AMANAD IVERSON*/
 
     public class Stack
     {
         // Creating the stack 
         public Node Head { get; set; }
-        public Node Tail { get; set; }
 
         //Method for setting up the link
         public Stack(Node node)
