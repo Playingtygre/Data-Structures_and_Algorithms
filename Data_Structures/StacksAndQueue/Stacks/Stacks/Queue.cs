@@ -6,6 +6,7 @@ namespace Stacks
 {
     public class Queue
     {
+        /* Parts of this code were copied from Kevin Farrow*/
         public Node Front { get; set; }
 
        
@@ -15,18 +16,20 @@ namespace Stacks
             Front = node;
         }
 
+        //pushed into the stack from the back
         public void Enqueue(Node node)
         {
-            Node runner = new Node();
-            runner = Front;
-            while (runner.Next != null)
+            Node tail = new Node();
+            tail = Front;
+            while (tail.Next != null)
             {
-                runner = runner.Next;
+                tail = tail.Next;
             }
-            runner.Next = node;
+            tail.Next = node;
             node.Next = null;
         }
 
+        //Taken from the nodes at the front.
         public Node Dequeue()
         {
             Node pop = Front;
@@ -34,6 +37,7 @@ namespace Stacks
             return pop;
         }
 
+        //Method for looking at the Front
         public Node Peek() => Front;
     }
 }//Bottom of the public void

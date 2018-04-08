@@ -9,9 +9,20 @@ namespace XUnitTestProject1
         //ACT
         //ASSERT
     {
+        /* Parts of this code were copied from Kevin Farrow*/
         private const string V = "11";
         private const int V1 = 10;
 
+
+        [Fact]
+        public void stack()
+        {
+            Stack sample = new Stack(new Node() { Value = V1 });
+            Assert.Equal("10", sample.Peek().Value.ToString());
+        }
+
+
+        //Adding push
         [Fact]
         public void CanPush()
         {
@@ -26,7 +37,8 @@ namespace XUnitTestProject1
         {
             Stack sample = new Stack(new Node() { Value = V1 });
             sample.Push(new Node() { Value = 11 });
-            Assert.Equal("10", sample.Pop().Value.ToString());
+            sample.Push(new Node() { Value = 11 });
+            Assert.Equal("11", sample.Pop().Value.ToString());
 
         }
 
