@@ -6,7 +6,7 @@ namespace LL_FindLoop
 {
     class Program
     {
-            /* Portions of this code were copied from Kevin Farrow */
+            /* Parts of this code base is attributed to Kevin Farrow */
 
       public static void Main(string[] args)
         {
