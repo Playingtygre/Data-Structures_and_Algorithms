@@ -9,7 +9,7 @@ namespace XUnitTestProject1
         //ACT
         //ASSERT
     {
-        /* Parts of this code were copied from Kevin Farrow*/
+        /* Parts of this code base is attributed to Kevin Farrow */
         private const string V = "11";
         private const int V1 = 10;
 
