@@ -17,7 +17,8 @@ stacks and Ques is pretty much an representaion of this but in a stacked manner.
 
 ## STACK
 ![exampleStack](/StacksAndQueue/Interface.jpg)
-![alt text](/StacksAndQueue/Interface.jpg)
+![alt text](/Interface.jpg)
+
 
 
 ## Getting Started
