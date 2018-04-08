@@ -90,16 +90,23 @@ namespace LL_FindLoop
                 return sb.ToString();
             }
 
+            // method for determining if a linked list is a circle
             public bool hasLoop()
             {
-                int lemgth = ListLength();
+                //inputs length of the linked list
+                int length = ListLength();
+                // if the linked list has a loop then return false
                 bool hasLoop = false;
+                // sets a runner to the current node
                 Node runner = new Node();
+                // Sets the runner next to the new head
                 runner.Next = head;
-                for (int i = 0; i < lemgth; i++)
+                //for loop which tells if the runners next ever touches the next returns true
+                for (int i = 0; i < length; i++)
                 {
                     if (runner.Next == null) hasLoop = true;
                 }
+                // if the runner is at the end of the linked list the always returns false.
                 return hasLoop;
             }
 
