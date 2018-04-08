@@ -9,5 +9,5 @@ arguments, zip the two nodes together in one larger Singly linked list.
 ## Solution
 ![alt text](/Assets/InsertAssertions.JPG)
 
-## Disclaimer
-Parts of this code base was copied from Kevin Farrow.
+## Attrubution
+Parts of this code base is attributed to Kevin Farrow
