@@ -8,19 +8,22 @@ on the side.
 Tiger Hsu
 
 ## Version:
-1.0.0 
+2.0.0 
 
 ## Overview
 This is an impplemtation of a stack nodes and Q nodes. Last week we had learned about Linked Lists,
 stacks and Ques is pretty much an representaion of this but in a stacked manner.
 
 
-## STACK
+## Stack
 This is an example of a stack: notice that its name is what it represents, nodes stacked on top of each other. In order to find Nodes you must pop off one Node at a time. In order to order to add nodes you can only add one at a time using pop. In order to see what is in a stack you can only peek at the top. An expression was given that stacks are like skinny grocery bags, you can't place something in the middle of the bag without going thru the top first.
 
 ![alt text](STACK.bmp)
 
+## Queue
+This is an example of a Queue. It is very similar to a stack. However the major difference is that the queue is a data structure that is leaning on its side. Another major difference is that adding the node list starts at the back of the queue.
 
+![alt text](QUEUE.bmp)
 
 ## Getting Started
 - Fork this repo / or clone this repo
@@ -49,6 +52,6 @@ MIT License
 
 ## Change Log
 
-04-02-2018 10:17am
+04-07-2018 10:17am
 
 
