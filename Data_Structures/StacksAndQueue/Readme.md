@@ -21,7 +21,7 @@ This is an example of a stack: notice that its name is what it represents, nodes
 ![alt text](STACK.bmp)
 
 ## Queue
-This is an example of a Queue. It is very similar to a stack. However the major difference is that the queue is a data structure that is leaning on its side. Another major difference is that adding the node list starts at the back of the queue.
+This is an example of a Queue. It is very similar to a stack. However the major difference is that the queue is a data structure that is leaning on its side. Another major difference is that adding the node list starts at the back of the queue. There is also different terms such as Dequeue returns and removes Node from the back.  Peek still looks at the front of the list. Enqueue is pulling from the top or in front of the list.
 
 ![alt text](QUEUE.bmp)
 
