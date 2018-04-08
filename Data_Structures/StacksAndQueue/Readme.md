@@ -1,4 +1,8 @@
 ## Statcks And Queue
+Stacks & Queues are Data Structures. In a stack Nodes which have values are 
+implemented on top of each other. They hold values inside each other and can 
+only be accessed from the top. Queue are similar to stacks however they are placed
+on the side. 
 
 ## Author:
 Tiger Hsu
