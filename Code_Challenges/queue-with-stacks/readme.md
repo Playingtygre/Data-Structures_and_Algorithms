@@ -11,3 +11,7 @@ You have access to 2 Stack instances with push and pop methods.
 ## Solution
 ![Example](/Assets/queue-with-stacks1.JPG)
 ![Example](/Assets/queue-with-stacks2.JPG)
+
+## Collaborations
+Amy Beverly
+Jay Adams
