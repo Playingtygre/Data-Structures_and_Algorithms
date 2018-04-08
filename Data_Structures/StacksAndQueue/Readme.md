@@ -16,7 +16,7 @@ stacks and Ques is pretty much an representaion of this but in a stacked manner.
 
 
 ## STACK
-[!exampleStack](/StacksAndQueue/STACK.bmp)
+[!exampleStack](/STACK.bmp)
 
 
 ## Getting Started
