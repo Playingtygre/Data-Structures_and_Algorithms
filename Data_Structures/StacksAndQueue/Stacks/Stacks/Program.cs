@@ -5,6 +5,7 @@ namespace Stacks
 {
     class Program
     {
+        /* Parts of this code base is attributed to Kevin Farrow */
         static void Main(string[] args)
         {
             Console.WriteLine("Stacked Node list");
@@ -25,7 +26,7 @@ namespace Stacks
             Queue testQueue = new Queue(new Node() { Value = 5 });
             testQueue.Enqueue(new Node() { Value = 10 });
             testQueue.Enqueue(new Node() { Value = 20 });
-            Console.WriteLine("Front of stack -> [5][20][10] <- Tail of S");
+            Console.WriteLine("Front of stack -> [5][20][10] <- Tail of Stack");
             Console.WriteLine("REMEMBER WE CAN ONLY LOOK AT ONE NODE AT A TIME");
             Console.WriteLine("LAST NODE PASSED IN WAS 10");
             Console.ReadLine();
