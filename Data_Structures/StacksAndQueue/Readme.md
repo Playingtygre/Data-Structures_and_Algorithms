@@ -34,13 +34,8 @@ This is an example of a Queue. It is very similar to a stack. However the major 
 ## Architecture
 This  Program uses C# and the .NET Core 2.0 platform
 
-## Credits
-Aurther Allen <br>
-Kevin Farrow <br>
-Brent William <br>
-Philip Werner <br>
-Josh Taylor <br>
-Amanda Iverson <br>
+## Attribution
+Parts of this code base is attributed to Kevin Farrow
 
 ## Resources
 StackoverFlow
