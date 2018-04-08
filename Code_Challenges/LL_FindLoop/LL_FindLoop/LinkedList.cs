@@ -13,7 +13,13 @@ namespace LL_FindLoop
         public class SinglyLinkedList
         {
             // SETTING THE NODE HEAD TO EMPTY
-            private Node head = null;
+            public Node head = null;
+            private int[] v;
+
+            public SinglyLinkedList(int[] v)
+            {
+                this.v = v;
+            }
 
             // CREATING A NEW NODE BY SETTING THE CURRENT
             public void Add(int value)
@@ -84,6 +90,18 @@ namespace LL_FindLoop
                 return sb.ToString();
             }
 
+            public bool hasLoop()
+            {
+                int lemgth = ListLength();
+                bool hasLoop = false;
+                Node runner = new Node();
+                runner.Next = head;
+                for (int i = 0; i < lemgth; i++)
+                {
+                    if (runner.Next == null) hasLoop = true;
+                }
+                return hasLoop;
+            }
 
             public int ListLength()
             {
@@ -96,32 +114,6 @@ namespace LL_FindLoop
                     runner = runner.Next;
                 }
                 return length;
-            }
-
-
-            //Method Called on Merging a linkined list
-            public Node MergeLists(SinglyLinkedList inputList)
-            {
-                // setting the head to a variable of runner
-                Node runnerOne = head;
-                //setting the second head to 
-                Node runnerTwo = inputList.head;
-                int limit = inputList.ListLength();
-                if (ListLength() < inputList.ListLength())
-                {
-                    limit = ListLength();
-                }
-                for (int i = 0; i < limit; i++)
-                {
-                    InsertAfter(runnerOne.Value, runnerTwo.Value);
-                    if (i == limit)
-                    {
-                        break;
-                    }
-                    runnerOne = runnerOne.Next.Next;
-                    runnerTwo = runnerTwo.Next;
-                }
-                return head;
             }
 
             /* Portions of this code were copied from Kevin Farrow */
