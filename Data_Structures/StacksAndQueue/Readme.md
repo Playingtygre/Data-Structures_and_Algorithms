@@ -14,6 +14,11 @@ Tiger Hsu
 This is an impplemtation of a stack nodes and Q nodes. Last week we had learned about Linked Lists,
 stacks and Ques is pretty much an representaion of this but in a stacked manner.
 
+
+## STACK
+[!exampleStack](/StacksAndQueue/STACK.bmp)
+
+
 ## Getting Started
 - Fork this repo / or clone this repo
 - Download Microsoft Visual Studio Community Edition 2017
