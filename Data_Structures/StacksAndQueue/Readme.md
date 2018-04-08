@@ -11,8 +11,7 @@ Tiger Hsu
 2.0.0 
 
 ## Overview
-This is an impplemtation of a stack nodes and Q nodes. Last week we had learned about Linked Lists,
-stacks and Ques is pretty much an representaion of this but in a stacked manner.
+This is an impplemtation of a stack nodes and Q nodes in C#.
 
 
 ## Stack
