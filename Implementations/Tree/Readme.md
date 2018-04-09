@@ -19,7 +19,6 @@ left is smaller from the right.
 5. The website will run on your default web browser routing to the main home page.
 
 ## Example of tree
-
 ![alt text](Binary_tree.bmp)
 
 ## Examples of IN-ORDER Traversal
@@ -27,6 +26,9 @@ left is smaller from the right.
 
 ## Example of Pre-Order Traversal
 ![alt text](PreOrder.bmp)
+
+## Example of Pre-Order Traversal
+![alt text](PostOrder.bmp)
 
 
 ## Architecture
