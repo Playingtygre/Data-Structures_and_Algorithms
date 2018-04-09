@@ -20,13 +20,12 @@ left is smaller from the right.
 
 ## Example of tree
 
-![alt text](Assset/Binary_tree.bmp/)
-
 ![alt text](Binary_tree.bmp)
 
-## Examples
-![alt text](http://url/to/img.png)
-## Examples
+## Examples of IN-ORDER Traversal
+![alt text](InOrder.bmp)
+
+## Exam
 
 <!-- Show them what looks like and how to use the application.  -->
 
