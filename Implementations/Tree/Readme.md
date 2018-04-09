@@ -20,7 +20,7 @@ left is smaller from the right.
 
 ## Example of tree
 
-![alt text](/Binary_tree.bmp/)
+![alt text](Assset/Binary_tree.bmp/)
 
 ![alt text](http://url/to/img.png)
 ## Examples
