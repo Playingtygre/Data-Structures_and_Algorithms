@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tree", "Tree\Tree.csproj", "{A011289B-FAE8-4B42-8EDB-6EF685D8970A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B606675C-6801-408B-ABA7-5A051B707F00}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A011289B-FAE8-4B42-8EDB-6EF685D8970A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A011289B-FAE8-4B42-8EDB-6EF685D8970A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A011289B-FAE8-4B42-8EDB-6EF685D8970A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A011289B-FAE8-4B42-8EDB-6EF685D8970A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C8CF8A7-D095-476A-B38E-AEBA55C06920}
+	EndGlobalSection
+EndGlobal
