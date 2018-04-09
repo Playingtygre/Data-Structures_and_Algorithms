@@ -15,6 +15,7 @@ namespace Tree
             Root = node;
         }
 
+
         // THS IS THE TRAVERSAL LIST
         public void InOrder(Node node)
         {
@@ -48,12 +49,11 @@ namespace Tree
 
             }
 
-
-
             if (node.RightChild != node)
             {
                 PreOrder(node.RightChild);
             }
+
 
         }
 
@@ -62,5 +62,5 @@ namespace Tree
 
 
 
-    }
+    } //Bottom of the Tree Class
 }
