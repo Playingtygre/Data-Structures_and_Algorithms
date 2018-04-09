@@ -22,7 +22,8 @@ left is smaller from the right.
 
 ![alt text](Assset/Binary_tree.bmp/)
 
-![alt text](http://url/to/img.png)
+![alt text](Binary_tree.bmp)
+
 ## Examples
 ![alt text](http://url/to/img.png)
 ## Examples
