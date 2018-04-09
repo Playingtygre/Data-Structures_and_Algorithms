@@ -25,9 +25,9 @@ left is smaller from the right.
 ## Examples of IN-ORDER Traversal
 ![alt text](InOrder.bmp)
 
-## Exam
+## Example of Pre-Order Traversal
+![alt text](PreOrder.bmp)
 
-<!-- Show them what looks like and how to use the application.  -->
 
 ## Architecture
  - C# ASP.NET Core application.
