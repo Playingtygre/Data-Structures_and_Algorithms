@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzTree", "FizzBuzzTree\FizzBuzzTree.csproj", "{F55FC899-A70F-46A3-B4D6-BF9F23C302A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09489D81-BBC1-43E1-ADC0-0AF580090E95}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F55FC899-A70F-46A3-B4D6-BF9F23C302A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55FC899-A70F-46A3-B4D6-BF9F23C302A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55FC899-A70F-46A3-B4D6-BF9F23C302A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55FC899-A70F-46A3-B4D6-BF9F23C302A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B09E3013-FB9A-42C9-9BF0-E34CBE644F8F}
+	EndGlobalSection
+EndGlobal
