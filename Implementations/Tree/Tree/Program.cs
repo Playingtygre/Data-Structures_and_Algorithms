@@ -8,7 +8,8 @@ namespace Tree
         {
             Console.WriteLine("Hello World!");
             // This is the object contructor that allows for a new node to be built
-            Node node = new Node();
+
+          
         }
     }
 }
