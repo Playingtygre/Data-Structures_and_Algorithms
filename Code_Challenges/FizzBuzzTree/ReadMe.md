@@ -7,9 +7,9 @@ fizz, buzz or both.  This will finally change the tree.
 
 ## Challenge
 Write a function called FizzBuzzTree which takes a tree as an argument.
-Conduct ìFizzBuzzî on a tree while traversing through it.
-Change the values of each of the nodes dependent on the current nodeís value.
+Conduct ‚ÄúFizzBuzz‚Äù on a tree while traversing through it.
+Change the values of each of the nodes dependent on the current node‚Äôs value.
 
 
 ## Solution
-[]()
+![example](/Assets/FizzBuzzTree.JPG)
