@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "find-maximum-value-binary-tree", "find-maximum-value-binary-tree\find-maximum-value-binary-tree.csproj", "{85BFA1FD-3448-4B4E-852B-7F4E4C29C61D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6034E46-5A01-40FA-94B1-69A825E332B8}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85BFA1FD-3448-4B4E-852B-7F4E4C29C61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85BFA1FD-3448-4B4E-852B-7F4E4C29C61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85BFA1FD-3448-4B4E-852B-7F4E4C29C61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85BFA1FD-3448-4B4E-852B-7F4E4C29C61D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4689DDBB-DBB6-4409-96F2-CC09456D10CE}
+	EndGlobalSection
+EndGlobal
