@@ -5,5 +5,6 @@ the K-ary tree itself, since it has no left or right instead must go line by lin
 
 ## Challenge
 Write a function based on the specifications above, which takes in a k-ary tree. Without utilizing any of the built-in methods available to your language, return a string that contains a listing of all values in the tree, with new lines in-between each level of the tree.
+
 ## Solution
-<!-- Embedded whiteboard image -->
+![picture](/Assets/printLevelOrder.JPG)
