@@ -8,4 +8,4 @@ Write a function that takes a k-ary tree with non-unique values and a target val
 Return a collection of all the nodes from within the tree that match the provided value.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![picture](/Assets/find_match.JPG)
