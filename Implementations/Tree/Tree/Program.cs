@@ -17,6 +17,7 @@ namespace BinaryTree
             Node<int> left = tree.Root.Left = new Node<int>(2);
 
             // lets then add a node value of  3 to the left 
+
             Node<int> leftLeft = left.Left = new Node<int>(3);
 
             //lets then add a node value of 4 to the right
