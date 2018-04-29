@@ -15,8 +15,8 @@ namespace XUnitTestProject1
         public void PreOrderTest(Tree<int> data)
         {
             // Arrange
-            // Reference TreeTestData.GetEnumerator()
-            List<int> expectedValues = new List<int> { 1, 2, 3, 8, 9, 4, 5, 6, 7 };
+ 
+            List<int> expectedValues = new List<int> { 1, 2, 3, 4,  };
             List<int> actualValues = new List<int>();
 
             // Act
@@ -25,5 +25,41 @@ namespace XUnitTestProject1
             // Assert
             Assert.Equal(expectedValues, actualValues);
         }
+
+
+
+
+
+        [Theory]
+        [ClassData(typeof(TreeTestData))]
+        public void InOrderTest(Tree<int> data)
+        {
+            //Arragne
+            List<int> expectedValues = new List<int> { 3, 2, 4, 1 };
+            List<int> actualValues = new List<int>();
+
+            // act
+            actualValues = data.InOrderTraversal(data.Root, actualValues);
+
+            //assert
+            Assert.Equal(expectedValues, actualValues);
+        }
+
+        [Theory]
+        [ClassData(typeof(TreeTestData))]
+        public void PostOrderTest(Tree<int> data)
+        {
+            //Arragne
+            List<int> expectedValues = new List<int> { 3, 4, 2, 1 };
+            List<int> actualValues = new List<int>();
+
+            // act
+            actualValues = data.PostOrderTraversal(data.Root, actualValues);
+
+            //assert
+            Assert.Equal(expectedValues, actualValues);
+        }
+
+
     }
 }
