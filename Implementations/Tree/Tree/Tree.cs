@@ -1,87 +1,96 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tree;
 
-namespace Tree
+
+namespace  BinaryTree
 {
-     class Tree
+
+    /* This is a Generics list of tree nodes inside
+     */
+
+     public class Tree <T>
     {
+        /* Depending on the traveral method we will be setting the Root
+         */
 
-        public Node Root { get; set; }
+        public Node<T> Root { get; set; }
 
-        //remember Root is node 
+        /* Accessing the node values using the tree <T> Generics
+         */ 
 
-        public Tree(Node node)
+        public Tree(T rootValue)
         {
-            Root = node;
+            Root = new Node<T>(rootValue);
         }
 
 
-        // THS IS THE TRAVERSAL LIST
+        /*  PreOrderTraversal -> lets bring in the nodes and the values
+         */
 
-        public void InOrder(Node node)
+        public List<T> PreOrderTraversal(Node<T> node, List<T> values)
         {
-            /*Remember if no left Node Exists then
-             *  this will cause a switch*/
-            if (node.LeftChild != node)
+            // 
+            values.Add(node.Value);
+
+            // PreOrder is left first if a Node is Found access that value
+            if (node.Left != null)
             {
-                InOrder(node.LeftChild);
+                PreOrderTraversal(node.Left, values);
             }
 
 
-            Console.WriteLine(node.Value);
-            /*Remember is the node ends at the right 
-            then kicks out and displays node value*/
-            if (node.RightChild != null)
+            // PreOrder is then followed by Right node if found access that node value
+            if (node.Right != null)
             {
-                InOrder(node.RightChild);
+                PreOrderTraversal(node.Right, values);
             }
 
-            Console.WriteLine(node.Value);
-
+            return values;
         }
 
-        // THIS IS THE TRAVERSAL LIST  
-        public void PreOrder(Node node)
+
+
+        /*  InOrderTraversal -> lets bring in the nodes and the values
+         */
+        public List<T> InOrderTraversal(Node<T> node, List<T> values)
         {
-            Console.WriteLine(node.Value);
-            if (node == null)
+            if (node.Left != null)
             {
-                return;
-            }
-            Console.WriteLine(node.Value);
-
-            if (node.LeftChild != null)
-            {
-
+                InOrderTraversal(node.Left, values);
             }
 
-            if (node.RightChild != node)
+            values.Add(node.Value);
+
+            if (node.Right != null)
             {
-                PreOrder(node.RightChild);
+                InOrderTraversal(node.Right, values);
             }
 
-            Console.WriteLine(node.Value);
+            return values;
         }
 
-        public void PostOrder(Node node)
+
+        /*  PostOrderTraversal -> lets bring in the nodes and the values
+         */
+
+        public List<T> PostOrderTraversal(Node<T> node, List<T> values)
         {
-            Console.WriteLine(node.Value);
-            if (node.LeftChild != null)
+            if (node.Left != null)
             {
-                PostOrder(node.LeftChild);  
+                PostOrderTraversal(node.Left, values);
             }
-            if (node.RightChild != null)
-            {
-                PostOrder(node.RightChild);
-            }
-            Console.WriteLine(node.Value);
 
+            if (node.Right != null)
+            {
+                PostOrderTraversal(node.Right, values);
+            }
+
+            values.Add(node.Value);
+
+            return values;
         }
-
-        
-
-
 
 
     } //Bottom of the Tree Class
