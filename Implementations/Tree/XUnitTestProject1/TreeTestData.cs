@@ -21,16 +21,13 @@ namespace BinaryTreeTest
             Node<int> left = tree.Root.Left = new Node<int>(2);
             Node<int> leftLeft = left.Left = new Node<int>(3);
             Node<int> leftRight = left.Right = new Node<int>(4);
-            /*
-            Node<int> right = tree.Root.Right = new Node<int>(5);
-            Node<int> rightLeft = right.Left = new Node<int>(6);
-            Node<int> rightRight = right.Right = new Node<int>(7);
-            /*
-            Node<int> leftLeftLeft = leftLeft.Left = new Node<int>(8);
-            Node<int> leftLeftRight = leftLeft.Right = new Node<int>(9);
-            */
+           
+
             yield return new object[] { tree };
         }
+
+
+        // Lets us use the Enum function to go thru the list of Enumerators.
 
         IEnumerator IEnumerable.GetEnumerator()
         {
