@@ -6,7 +6,7 @@ top of the tree is refered to as the root , nad smaller branches that are at the
 Tiger Hsu
 
 ## Version:
-1.0.0 
+2.0.0 
 
 ## Overview
 Binary Tree, are data structures. there are several diffrent ways to traverse thru them. As a notion from the root;
@@ -37,7 +37,8 @@ left is smaller from the right.
  - Entity Framework - built in Visual Studio
 
 ## Attribution
-Hacker Rank by 
+Hacker Rank <br>
+Josh Taylor
 
 ## Resources
 StackoverFlow
