@@ -12,7 +12,7 @@ namespace BinaryTree
         public Node<T> Right { get; set; }
 
 
-        //* Setting up Node<T> value, as a generics later on
+      //* Setting up Node<T> value, as a generics later on
         public T Value { get; set; }
 
 

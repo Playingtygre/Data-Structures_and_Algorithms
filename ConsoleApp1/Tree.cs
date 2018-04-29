@@ -39,7 +39,6 @@ namespace BinaryTree
                 PreOrderTraversal(node.Right, values);
             }
 
-           
             return values;
         }
 
@@ -82,8 +81,8 @@ namespace BinaryTree
             }
 
             values.Add(node.Value);
+
             return values;
-            
         }
 
     }//Bottom of the Tree Class
