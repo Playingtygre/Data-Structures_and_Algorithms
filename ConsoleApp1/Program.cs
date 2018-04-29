@@ -1,60 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace BinaryTree
 {
     class Program
     {
         static void Main(string[] args)
-        { 
+        {
+            Console.WriteLine("The following are examples of traversing a binary tree.");
+            Console.WriteLine("The nodes are numbered starting with 1 at the root");
+            Console.WriteLine("2 left, 3 left-left, 4 left-right, 5 right, 6 right-left");
+            Console.WriteLine("7 right-right, 8 left-left-left, 9 left-left-right.");
+            Console.WriteLine();
 
-
-            // Lets make a tree with the root at 1
+            // Create the tree and nodes
             Tree<int> tree = new Tree<int>(1);
 
-            // Lets then add a node value of 2 to the left
             Node<int> left = tree.Root.Left = new Node<int>(2);
-
-            // lets then add a node value of  3 to the left 
-
             Node<int> leftLeft = left.Left = new Node<int>(3);
-
-            //lets then add a node value of 4 to the right
             Node<int> leftRight = left.Right = new Node<int>(4);
 
-            // lets then add a node value to that right
             Node<int> right = tree.Root.Right = new Node<int>(5);
+            Node<int> rightLeft = right.Left = new Node<int>(6);
+            Node<int> rightRight = right.Right = new Node<int>(7);
 
-          
-            /* new instance of a list of nodes
-             */
+            Node<int> leftLeftLeft = leftLeft.Left = new Node<int>(8);
+            Node<int> leftLeftRight = leftLeft.Right = new Node<int>(9);
 
             List<int> values = new List<int>();
 
             // Show the results of all three traversal types
-
-            /*  setting values to a new tree. using preOrder method adding the tree and its values Parameters of (node, values)
-             *  
-             */
-
             values = tree.PreOrderTraversal(tree.Root, values);
             Console.WriteLine("Pre-order Traversal:");
             Console.WriteLine($"[{string.Join(", ", values)}]");
             Console.WriteLine();
             values.Clear();
 
-
-            /* setting values to a new tree. using InOrder method adding the tree and its values Parameters of (node, values)
-             */
             values = tree.InOrderTraversal(tree.Root, values);
             Console.WriteLine("In-order Traversal:");
             Console.WriteLine($"[{string.Join(", ", values)}]");
             Console.WriteLine();
             values.Clear();
-
-            /* setting values to a new tree. using PostOrder method adding the tree and its values Parameters of (node, values)
-             */
 
             values = tree.PostOrderTraversal(tree.Root, values);
             Console.WriteLine("Post-order Traversal:");
