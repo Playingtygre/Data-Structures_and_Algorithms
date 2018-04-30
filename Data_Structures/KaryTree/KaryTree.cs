@@ -39,23 +39,31 @@ namespace K_aryTrees
         //
         public delegate void Method(Node<T> n);
 
-        /*Traversing recursively
+        /*Traversing using PreOrder
          */
 
         public void PreOrderTraverse(Method func)
         {
+            // find the root node
             func(Root);
+            // append a child to the root node
             foreach (Node<T> n in Root.Children)
             {
+                //<T>  creating a new tree
                 Tree<T> t = new Tree<T>(n);
                 t.PreOrderTraverse(func);
             }
         }
 
+
+        // PostOrder Travesal brings in an argument of another method
         public void PostOrderTraverse(Method func)
         {
+
+            //<T> A generics for Root-> children
             foreach (Node<T> n in Root.Children)
             {
+                // adding children to the <T> generics
                 Tree<T> t = new Tree<T>(n);
                 t.PreOrderTraverse(func);
             }
@@ -66,6 +74,7 @@ namespace K_aryTrees
         //Using queue for a for a traversal
         public void BreadthFirstTraverse(Method func)
         {
+            
             Queue<Node<T>> q = new Queue<Node<T>>();
             q.Enqueue(Root);
             Node<T> current;
@@ -79,11 +88,18 @@ namespace K_aryTrees
             }
         }
 
+
+        /* Adding a node to the tree; 
+         *  <T> is the generics to where to add.
+         */
+
         public void Add(T target, T addition)
         {
+
             bool added = false;
             void AddConditionally(Node<T> current)
             {
+                // at the current node.Value add the <T> node to the list 
                 if (!added && current.Value.Equals(target))
                 {
                     current.Children.Add(new Node<T> { Value = addition });
