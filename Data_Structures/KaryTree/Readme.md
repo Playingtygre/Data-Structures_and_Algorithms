@@ -18,7 +18,7 @@ Tiger Hsu
 5. The website will run on your default web browser routing to the main home page.
 
 ## Example of  K-nary tree
-![alt text](Binary_tree.bmp)
+![alt text](/Assets/K-nary.png)
 
 ## Architecture
  - C# ASP.NET Core application.
@@ -28,6 +28,9 @@ Tiger Hsu
 ## Resources
 StackoverFlow
 Microsoft Docs
+
+## Attribution
+Brent Williams
 
 ## License
 MIT License
