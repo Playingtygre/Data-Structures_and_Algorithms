@@ -2,23 +2,18 @@
 
 namespace K_aryTrees
 {
-    /*  Generics T tree
-     */
-
+    /// <summary>
+    /// Generics <T>
+    /// </summary>
+    
     public class Tree<T>
     {
-
-        /* This is the knary tree construtor 
-         */
-        // Setting up the generics <T > root 
-
+       //Constructor for tree
         public Tree(Node<T> root)
         {
             //Root.<T> to Node.root
             Root = root;
         }
-
-       
 
         //<T>root 
         public Tree(T rootValue)
@@ -28,20 +23,19 @@ namespace K_aryTrees
         }
 
 
-        /* <T>.Root set
-         */
-
-        /* Setting up the properties of the <T> 
-           */
+        /// <summary>
+        /// <T> Generics Root set method, then we will add the properties to them
+        /// </summary>
 
         public Node<T> Root { get; set; }
 
-        //
         public delegate void Method(Node<T> n);
 
-        /*Traversing using PreOrder
-         */
 
+        /// <summary>
+        /// Traversing using PreOrder
+        /// </summary>
+      
         public void PreOrderTraverse(Method func)
         {
             // find the root node
@@ -55,8 +49,9 @@ namespace K_aryTrees
             }
         }
 
+        /// <summary>
+        /// PostOrder Traversal brings in an argument of another method
 
-        // PostOrder Travesal brings in an argument of another method
         public void PostOrderTraverse(Method func)
         {
 
@@ -69,7 +64,6 @@ namespace K_aryTrees
             }
             func(Root);
         }
-
 
         //Using queue for a for a traversal
         public void BreadthFirstTraverse(Method func)
@@ -88,11 +82,10 @@ namespace K_aryTrees
             }
         }
 
-
-        /* Adding a node to the tree; 
-         *  <T> is the generics to where to add.
-         */
-
+        /// <summary>
+        /// Adding a node to a tree, remember this adds at the children 
+        /// </summary>
+   
         public void Add(T target, T addition)
         {
 
