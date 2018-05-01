@@ -2,23 +2,18 @@
 
 namespace K_aryTrees
 {
-    /*  Generics T tree
-     */
-
+    /// <summary>
+    /// Generics <T>
+    /// </summary>
+    
     public class Tree<T>
     {
-
-        /* This is the knary tree construtor 
-         */
-        // Setting up the generics <T > root 
-
+       //Constructor for tree
         public Tree(Node<T> root)
         {
             //Root.<T> to Node.root
             Root = root;
         }
-
-       
 
         //<T>root 
         public Tree(T rootValue)
@@ -28,44 +23,52 @@ namespace K_aryTrees
         }
 
 
-        /* <T>.Root set
-         */
-
-        /* Setting up the properties of the <T> 
-           */
+        /// <summary>
+        /// <T> Generics Root set method, then we will add the properties to them
+        /// </summary>
 
         public Node<T> Root { get; set; }
 
-        //
         public delegate void Method(Node<T> n);
 
-        /*Traversing recursively
-         */
 
+        /// <summary>
+        /// Traversing using PreOrder
+        /// </summary>
+      
         public void PreOrderTraverse(Method func)
         {
+            // find the root node
             func(Root);
+            // append a child to the root node
             foreach (Node<T> n in Root.Children)
             {
+                //<T>  creating a new tree
                 Tree<T> t = new Tree<T>(n);
                 t.PreOrderTraverse(func);
             }
         }
+
+        /// <summary>
+        /// PostOrder Traversal brings in an argument of another method
 
         public void PostOrderTraverse(Method func)
         {
+
+            //<T> A generics for Root-> children
             foreach (Node<T> n in Root.Children)
             {
+                // adding children to the <T> generics
                 Tree<T> t = new Tree<T>(n);
                 t.PreOrderTraverse(func);
             }
             func(Root);
         }
-
 
         //Using queue for a for a traversal
         public void BreadthFirstTraverse(Method func)
         {
+            
             Queue<Node<T>> q = new Queue<Node<T>>();
             q.Enqueue(Root);
             Node<T> current;
@@ -79,11 +82,17 @@ namespace K_aryTrees
             }
         }
 
+        /// <summary>
+        /// Adding a node to a tree, remember this adds at the children 
+        /// </summary>
+   
         public void Add(T target, T addition)
         {
+
             bool added = false;
             void AddConditionally(Node<T> current)
             {
+                // at the current node.Value add the <T> node to the list 
                 if (!added && current.Value.Equals(target))
                 {
                     current.Children.Add(new Node<T> { Value = addition });

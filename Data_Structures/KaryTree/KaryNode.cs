@@ -9,10 +9,10 @@ namespace K_aryTrees
 
     public class Node<T>
     {
-        
-        /* Knary Tree; Root node has children,
-         */
-
+        /// <summary>
+        /// Knary Tree; Root node has children
+        /// </summary>
+ 
         public Node()
         {
             // Setting up Constuctor to the generics list.
@@ -42,7 +42,6 @@ namespace K_aryTrees
             Value = value;
         }
 
-    
         public T Value { get; set; }
         public List<Node<T>> Children { get; set; }
     }
