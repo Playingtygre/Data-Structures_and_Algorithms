@@ -72,7 +72,7 @@ namespace HashTable
         /* Search method for finding things in our Hash Table
          */
 
-        public string Contains(string key)
+        public string Contains(string key, string value)// 
         {
             key = key.ToLower();
             //sets the key to normalize
@@ -88,6 +88,22 @@ namespace HashTable
             //If we hashed out to something but it dosen't contain our key
         }
 
+        public string Contain(string key) // No
+        {
+            key = key.ToLower();
+            //sets the key to normalize
+            int index = GetHash(key);
+            // 
+            if (Table[index] == null) return null;
+            foreach (Node node in Table[index])
+            {
+                if (node.Key.ToLower() == key)
+                    return node.Key + node.Value;
+            }
+
+            return null;
+            //If we hashed out to something but it dosen't contain our key
+        }
 
     }
 }
