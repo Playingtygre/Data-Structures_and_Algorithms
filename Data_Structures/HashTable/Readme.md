@@ -20,7 +20,6 @@ This is a simple coding example in C# of what a Hash table might look like.
 
 ## Example
 
-![alt text](http://url/to/img.png)
 
 
 ## Architecture
