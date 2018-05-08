@@ -12,10 +12,10 @@ namespace HashTable
             newtabe.Add("Key3", "Value3");
 
 
-
-            Console.WriteLine(newtabe.Contains("Key1", "Value1"));
-            Console.WriteLine(newtabe.Contains("Key2", "Value2"));
-            Console.WriteLine(newtabe.Contains("Key3", "Value3"));
+            Console.WriteLine(" The hash table lools like {KeyPair} + {It's Value}");
+            Console.WriteLine(newtabe.Contain("Key1"));
+            Console.WriteLine(newtabe.Contain("Key2"));
+            Console.WriteLine(newtabe.Contain("Key3"));
 
 
             var x = newtabe.ToString();

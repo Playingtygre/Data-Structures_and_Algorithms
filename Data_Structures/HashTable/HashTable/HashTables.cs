@@ -97,7 +97,8 @@ namespace HashTable
             if (Table[index] == null) return null;
             foreach (Node node in Table[index])
             {
-                if (node.Key.ToLower() == key) return node.Value;
+                if (node.Key.ToLower() == key)
+                    return node.Key + node.Value;
             }
 
             return null;
