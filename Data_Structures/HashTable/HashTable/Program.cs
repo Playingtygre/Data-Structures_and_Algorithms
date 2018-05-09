@@ -11,16 +11,12 @@ namespace HashTable
             newtabe.Add("Key2", "Value2");
             newtabe.Add("Key3", "Value3");
 
+            Console.WriteLine(" The hash table looks like {KeyPair} + {It's Value}");
+            Console.WriteLine("Let us add 3 Keys and see whats inside of them");
 
-            Console.WriteLine(" The hash table lools like {KeyPair} + {It's Value}");
             Console.WriteLine(newtabe.Contain("Key1"));
             Console.WriteLine(newtabe.Contain("Key2"));
             Console.WriteLine(newtabe.Contain("Key3"));
-
-
-            var x = newtabe.ToString();
-            Console.WriteLine(x);
-
 
 
             Console.ReadLine();

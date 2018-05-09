@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace HashTable
 {
     public class HashTables
     {
-
         /* Remember that the Hash Tables are Key-Pair, Values
          */
 
             // Link List is a doubly link list [{key},{value}]
         private LinkedList<Node>[] Table;
 
-        //int of Hashtable has Prime Factor
+        //int of Hash-table has Prime Factor
         private int primeFactor = 599;
 
 
@@ -25,7 +25,10 @@ namespace HashTable
         }
 
 
-        //Method for 
+        /* Method for determining the set of key;
+         * 
+         */
+
         public int GetHash(string key)
         {
             int hash = 0; 
@@ -43,9 +46,12 @@ namespace HashTable
             return hash;
         }
 
+
+        //This Method adds a item to the Hash-table
         public void Add(string key, string value)
         {
-            Node newEntry = new Node() { Value = value, Key = key }; 
+            Node newEntry = new Node()
+            { Value = value, Key = key }; 
             //Object constructor to Store both key and value to ref later
 
             key = key.ToLower(); 
@@ -55,40 +61,33 @@ namespace HashTable
             // setting up index to the Key of hash
             //get our index to put the value into
 
-            
+
             if (Table[index] == null)
             // Checks to see if we are at the end of the table
             {
                 Table[index] = new LinkedList<Node>();
                 //insert into the end the the table 
                 Table[index].AddFirst(newEntry);
-                //
+               
             }
+
+            // This error that occurs with collisions
+            if (Table[index].Any(x=> newEntry.Equals(key)))
+            {
+                throw new AggregateException("Duplicate keys");
+            }
+
+
             else Table[index].AddFirst(newEntry);
+
+      
             //New node entry point
         }
 
 
-        /* Search method for finding things in our Hash Table
-         */
+            // This Method get a value from a key(Method)
+        public string Contain(string key)
 
-        public string Contains(string key, string value)// 
-        {
-            key = key.ToLower();
-            //sets the key to normalize
-            int index = GetHash(key);
-            // 
-            if (Table[index] == null) return null;
-            foreach (Node node in Table[index])
-            {
-                if (node.Key.ToLower() == key) return node.Value;
-            }
-
-            return null; 
-            //If we hashed out to something but it dosen't contain our key
-        }
-
-        public string Contain(string key) // No
         {
             key = key.ToLower();
             //sets the key to normalize
@@ -98,11 +97,10 @@ namespace HashTable
             foreach (Node node in Table[index])
             {
                 if (node.Key.ToLower() == key)
-                    return node.Key + node.Value;
+                    return node.Value; //node.key
             }
 
             return null;
-            //If we hashed out to something but it dosen't contain our key
         }
 
     }
