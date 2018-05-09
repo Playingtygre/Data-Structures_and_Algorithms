@@ -12,3 +12,4 @@ This is a folder for learning about arrays, linked lists, binary trees, hash tab
 2. [Linked List Insertion]
 3. [k-th Value]
 4. [Merge Two Link Lists]
+5. [Hash Tables ] (/Data_Structures/HashTable/)
