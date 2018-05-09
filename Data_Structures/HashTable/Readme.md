@@ -7,10 +7,14 @@ of information.
 Tiger Hsu
 
 ## Version:
-1.0.0 
+2.0.0 
 
 ## Overview
-This is a simple coding example in C# of what a Hash table might look like.
+This is a simple coding example in C# of what a Hash table might look like. <br>
+1. Adding an Item to the Hash-table : public void Add(string key, string value) <br>
+2. Getting Value from a Key Contains : public string Contain(string key) <br>
+3. Making a algorithm that will determine the key of a key/value : public int GetHash(string key) <br>
+4.
 
 ## Getting Started
 1. Clone the repository to your local machine.
