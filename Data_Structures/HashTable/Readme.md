@@ -14,17 +14,13 @@ This is a simple coding example in C# of what a Hash table might look like. <br>
 1. Adding an Item to the Hash-table : public void Add(string key, string value) <br>
 2. Getting Value from a Key Contains : public string Contain(string key) <br>
 3. Making a algorithm that will determine the key of a key/value : public int GetHash(string key) <br>
-4.
+4. Handling collisions if there are two values which have the same index; then it will throw a exception error.
 
 ## Getting Started
 1. Clone the repository to your local machine.
 2. Select into application directory where the *AppName.sln* exist.
 3. Open the application using *Open/Start AppName.sln*.
 5. The website will run on your default web browser routing to the main home page.
-
-## Example
-
-
 
 ## Architecture
  - C# ASP.NET Core application.
