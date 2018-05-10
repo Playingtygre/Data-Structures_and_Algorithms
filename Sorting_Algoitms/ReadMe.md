@@ -1,4 +1,5 @@
-## Project Name
+## Insert Sort
+This is a Insert Sort algorithm. That takes in a mixed array an outputs least to Greatest.
 
 ## Author:
 Tiger Hsu
@@ -7,8 +8,17 @@ Tiger Hsu
 1.0.0 
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyo
-nd the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's your problem domain?) -->
+SO, Imagine given a list of number in random, you want them sorted.
+the insertion sort takes in two integers side by side; if one is greator than 
+the other then it keeps in the same index; if one integer is less than it 
+moves to the left of the array. This happens as the list moves accross until
+all numbers have been touched/looked at.
+
+1. Insertion Sort method takes in an  input-array (line 23)
+2. Comaring item i if less than; move the index
+3. Out put Sorted array (line 43)
+
+
 
 ## Getting Started
 1. Clone the repository to your local machine.
@@ -16,11 +26,6 @@ nd the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's y
 3. Open the application using *Open/Start AppName.sln*.
 5. The website will run on your default web browser routing to the main home page.
 
-## Example
-
-![alt text](http://url/to/img.png)
-
-<!-- Show them what looks like and how how to use the application.  -->
 
 ## Architecture
  - C# ASP.NET Core application.
@@ -28,18 +33,15 @@ nd the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's y
  - Entity Framework - built in Visual Studio
 
 
-## Attribution
-
-
 ## Resources
 StackoverFlow
 Microsoft Docs
+GeekWire.com
+YouTube online tutorials
 
 ## License
 MIT License
 
-/* Code modified from function sortTableArray obtained from  */
-
 ## Change Log
 
-01-01-2001 4:59pm - Added functionality to add and delete some things. -->
+05-10-2018 4:59pm 
