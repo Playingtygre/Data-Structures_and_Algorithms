@@ -7,4 +7,4 @@
 Implement Mergesort Method; We had done a mock code live demonstartion in class. 
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![image](/Assets/MergeSort.JPG)
