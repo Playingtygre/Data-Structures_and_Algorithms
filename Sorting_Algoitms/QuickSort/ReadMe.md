@@ -6,4 +6,4 @@ The unordered list gets split in half. Each index is compared to another and spl
 Write a function that accepts an array of integers, and returns an array sorted by a recursive quicksort algorithm.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![image](/Assets/MergeSort.JPG)
