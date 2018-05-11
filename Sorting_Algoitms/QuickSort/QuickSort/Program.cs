@@ -56,6 +56,7 @@ namespace QuickSort
                 }
             }
 
+           
           
 
         }
@@ -80,7 +81,7 @@ namespace QuickSort
                     right--;
                 }
 
-                //Swaping Values and moving indecies
+                //Swap Values and moving left and right pointer
                 if (left < right)
                 {
                     if (arr[left] == arr[right]) return right;
