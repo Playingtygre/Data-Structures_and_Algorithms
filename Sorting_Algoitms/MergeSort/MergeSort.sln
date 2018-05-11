@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{A7267C52-E308-4122-9904-63697FD4FA33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeSort", "MergeSort\MergeSort.csproj", "{A7267C52-E308-4122-9904-63697FD4FA33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{553882E5-B3D8-4094-A761-9E62752CF65C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A3540129-6F53-42F5-B83D-E46C2AF4A80A}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{A7267C52-E308-4122-9904-63697FD4FA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7267C52-E308-4122-9904-63697FD4FA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7267C52-E308-4122-9904-63697FD4FA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553882E5-B3D8-4094-A761-9E62752CF65C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553882E5-B3D8-4094-A761-9E62752CF65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553882E5-B3D8-4094-A761-9E62752CF65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553882E5-B3D8-4094-A761-9E62752CF65C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
