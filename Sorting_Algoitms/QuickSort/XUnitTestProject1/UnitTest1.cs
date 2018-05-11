@@ -6,6 +6,8 @@ namespace XUnitTestProject1
 {
     public class UnitTest1
     {
+
+       
         [Theory]
 
         [InlineData(new int[] { 7, 3, 1 },
@@ -18,7 +20,7 @@ namespace XUnitTestProject1
              new int[] { -9, 0, 19, 34, 42, 77, 2005, 2018, 2099 })]
 
 
-        public void Quick_Sort(int[] unsortedArray, int[] expectedArray)
+        public void Quick_Sorts(int[] unsortedArray, int[] expectedArray)
         {
             // Act
             int[] sortedArray = Program.Quick_Sort(unsortedArray);
@@ -26,6 +28,9 @@ namespace XUnitTestProject1
             // Assert
             Assert.Equal(expectedArray, sortedArray);
         }
+        
+
+        
 
     }
 }
