@@ -4,10 +4,10 @@ large array of number.
 
 
 ## Challenge
-Implement a Radix Sort, This has several piecs to it.
+Implement a Radix Sort, This has several Pieces to it
 
 ## Solution
-![image](/Assets/Raddix.JPG)
+![image](/Assets/Raddix.JPG) <br>
 *This is one of the most complex ones I have attempted*
 
 ## Attributions
