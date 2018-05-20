@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 
- namespace RaddixSort
+namespace RaddixSortMethod
 {
    public class Program
     {
@@ -8,27 +9,86 @@
          * 
          */
 
-        static void Main(string[] args)
+
+        public static void Main(string[] args)
         {
 
-            int[] arr = new int[] { 2, 5, -4, 11, 0, 18, 22, 60, 51, 6 };
-            Console.WriteLine("\nOriginal array : ");
-            foreach (var item in arr)
+
+            int[] array =  new int[7] { 7, 5, 3, 6, 76, 45, 32 };
+
+            foreach (int item in array)
             {
-                Console.Write(" " + item);
+                Console.WriteLine(item);
             }
 
-            Sort(arr);
-            Console.WriteLine("\nSorted array : ");
-            foreach (var item in arr)
-            {
-                Console.Write(" " + item);
-            }
-            Console.WriteLine("\n");
-            Console.ReadLine();
+            int[] sortedArray = RadixSort(array);
+
+            Console.WriteLine(sortedArray);
+
         }
 
+            public static int[] RadixSort(int[] array)
+            {
+                bool isFinished = false;
+                int digitPosition = 0;
 
+                List<Queue<int>> buckets = new List<Queue<int>>();
+                InitializeBuckets(buckets);
+
+                while (!isFinished)
+                {
+                    isFinished = true;
+
+                    foreach (int value in array)
+                    {
+                        int bucketNumber = GetBucketNumber(value, digitPosition);
+                        if (bucketNumber > 0)
+                        {
+                            isFinished = false;
+                        }
+
+                        buckets[bucketNumber].Enqueue(value);
+                    }
+
+                    int i = 0;
+                    foreach (Queue<int> bucket in buckets)
+                    {
+                        while (bucket.Count > 0)
+                        {
+                            array[i] = bucket.Dequeue();
+                            i++;
+                        }
+                    }
+
+                    digitPosition++;
+                }
+
+                return array;
+            }
+
+            public static int GetBucketNumber(int value, int digitPosition)
+            {
+                int bucketNumber = (value / (int)Math.Pow(10, digitPosition)) % 10;
+                return bucketNumber;
+            }
+
+            private static void InitializeBuckets(List<Queue<int>> buckets)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    Queue<int> q = new Queue<int>();
+                    buckets.Add(q);
+                }
+            }
+
+        
+
+
+
+
+
+
+        /*/ This is another implemtation of Raddix Sort
        public static void Sort(int[] arr)
         {
             //Declare variables i and j
@@ -58,7 +118,7 @@
                 }
                Array.Copy(tmp, 0, arr, arr.Length - j, j);
             }
-        }
+        }*/
 
     }
 }
