@@ -56,7 +56,7 @@
                     else
                         tmp[j++] = arr[i];
                 }
-                Array.Copy(tmp, 0, arr, arr.Length - j, j);
+               Array.Copy(tmp, 0, arr, arr.Length - j, j);
             }
         }
 
