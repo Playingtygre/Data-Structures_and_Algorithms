@@ -13,7 +13,6 @@ namespace RaddixSortMethod
         public static void Main(string[] args)
         {
 
-
             int[] array =  new int[7] { 7, 5, 3, 6, 76, 45, 32 };
 
             foreach (int item in array)
@@ -26,7 +25,7 @@ namespace RaddixSortMethod
             Console.WriteLine(sortedArray);
 
         }
-
+      
             public static int[] RadixSort(int[] array)
             {
                 bool isFinished = false;
