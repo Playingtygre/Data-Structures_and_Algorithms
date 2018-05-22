@@ -5,7 +5,7 @@ namespace RaddixSortMethod
 {
    public class Program
     {
-        /* Raddix Sort deals with using buckets and comparing various tens digit to each other.
+        /* Radix Sort deals with using buckets and comparing various tens digit to each other.
          * 
          */
 
@@ -13,31 +13,43 @@ namespace RaddixSortMethod
         public static void Main(string[] args)
         {
 
+
+            //Setting array constructor
+
             int[] array =  new int[7] { 7, 5, 3, 6, 76, 45, 32 };
 
+            //Lets iterate thru the array then perform radix sort on it.
             foreach (int item in array)
             {
                 Console.WriteLine(item);
             }
 
+            //This is similar to recursion
             int[] sortedArray = RadixSort(array);
 
             Console.WriteLine(sortedArray);
 
         }
-      
+
+            //Radix Sort takes in array[]
+
             public static int[] RadixSort(int[] array)
             {
                 bool isFinished = false;
                 int digitPosition = 0;
 
+                //object constructor of bucket
                 List<Queue<int>> buckets = new List<Queue<int>>();
                 InitializeBuckets(buckets);
 
+
+                //Sits array into buckets
                 while (!isFinished)
                 {
                     isFinished = true;
-
+                    
+                    
+                    //Every value must belong in a bucket
                     foreach (int value in array)
                     {
                         int bucketNumber = GetBucketNumber(value, digitPosition);
@@ -46,9 +58,12 @@ namespace RaddixSortMethod
                             isFinished = false;
                         }
 
+                        //When finally sorted enqueue all values
                         buckets[bucketNumber].Enqueue(value);
                     }
 
+
+                    //How many bucket values there are dequeue them.
                     int i = 0;
                     foreach (Queue<int> bucket in buckets)
                     {
@@ -65,12 +80,14 @@ namespace RaddixSortMethod
                 return array;
             }
 
+                //Bu
             public static int GetBucketNumber(int value, int digitPosition)
             {
                 int bucketNumber = (value / (int)Math.Pow(10, digitPosition)) % 10;
                 return bucketNumber;
             }
 
+             //Bucket creator only has 10 buckets to star off, adds buckets into the queue
             private static void InitializeBuckets(List<Queue<int>> buckets)
             {
                 for (int i = 0; i < 10; i++)
