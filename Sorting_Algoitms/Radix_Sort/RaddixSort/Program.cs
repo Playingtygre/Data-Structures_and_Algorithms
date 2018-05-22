@@ -13,7 +13,9 @@ namespace RaddixSortMethod
         public static void Main(string[] args)
         {
 
+
             //Setting array constructor
+
             int[] array =  new int[7] { 7, 5, 3, 6, 76, 45, 32 };
 
             //Lets iterate thru the array then perform radix sort on it.
@@ -30,6 +32,7 @@ namespace RaddixSortMethod
         }
 
             //Radix Sort takes in array[]
+
             public static int[] RadixSort(int[] array)
             {
                 bool isFinished = false;
