@@ -4,6 +4,10 @@ This is a Insert Sort algorithm. That takes in a mixed array an outputs least to
 ## Author:
 Tiger Hsu
 
+
+## Attributions:
+
+
 ## Version:
 1.0.0 
 
