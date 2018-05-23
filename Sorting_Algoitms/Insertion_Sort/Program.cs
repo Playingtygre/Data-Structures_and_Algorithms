@@ -13,10 +13,6 @@ namespace Insertion_Sort
             Console.WriteLine("\n Sorted Array Elements");
             PrintIntegerArry(InsertionSort(number));
 
-
-
-            Console.WriteLine("Hello World!");
-
             Console.ReadLine();
         }
 
