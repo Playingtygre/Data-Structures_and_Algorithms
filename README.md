@@ -14,10 +14,15 @@ This is a folder for learning about arrays, linked lists, binary trees, hash tab
 4. [Merge Two Link Lists]
 5. [Hash Tables ](Data_Structures/HashTable/)
 6. [Hash Tables ](Data_Structures/HashTable/)
-
 6. [Hash Tables ](Data_Structures/HashTable/)
-
 7. [Hash Tables ](Data_Structures/HashTable/)
 8. [Hash Tables ](Data_Structures/HashTable/)
+9. [Hash Tables ](Data_Structures/HashTable/)
 
+## Daily Data-Structures
+5. [Hash Tables ](Data_Structures/HashTable/)
+6. [Hash Tables ](Data_Structures/HashTable/)
+6. [Hash Tables ](Data_Structures/HashTable/)
+7. [Hash Tables ](Data_Structures/HashTable/)
+8. [Hash Tables ](Data_Structures/HashTable/)
 9. [Hash Tables ](Data_Structures/HashTable/)
